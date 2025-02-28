@@ -1,0 +1,26 @@
+[project]
+name = "genlister"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Daniel T. Andreasen", email = "daniel@clin.au.dk" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.10.6",
+    "typer>=0.15.2",
+]
+
+[project.scripts]
+genlister = "genlister:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/genlister"]

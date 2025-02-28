@@ -1,0 +1,5 @@
+hugo_name,hgnc_id,protocol,date_added,notes,gain_loss_both
+BRAF,1337,,2025-02-24,,gain
+BRCA1,1234,,2025-02-25,my first ever gene,gain
+GEN1,7890,,2025-02-24,,unknown
+KRAS,42,,2025-02-24,,loss
