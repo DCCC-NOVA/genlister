@@ -1,4 +1,4 @@
-name: Validate CSV Files
+name: Validate CSV gene lists
 
 on:
   push:
