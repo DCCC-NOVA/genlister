@@ -1,6 +1,5 @@
 from pathlib import Path
 
-import typer
 from pydantic import ValidationError
 
 from genlister.core import TYPE2VALIDATOR, CSVBase, TypeOfListEnum
@@ -25,15 +24,12 @@ def is_duplicate(genes: list[CSVBase], gene_row: CSVBase) -> bool:
     )
 
 
-app = typer.Typer()
-
-
-@app.command(help="Validate a CSV file.")
 def validate_file(type_of_list: TypeOfListEnum, fname: Path):
     if not fname.exists():
         raise IOError(f"File not found: {fname}")
     validator = TYPE2VALIDATOR[type_of_list]
     genes: list[CSVBase] = []
+    has_printed_fname = False
     with open(fname, "r") as f:
         header = f.readline().strip().split(",")
         for row in f:
@@ -41,10 +37,16 @@ def validate_file(type_of_list: TypeOfListEnum, fname: Path):
             try:
                 gene_row = validator.model_validate(values)
             except ValidationError as e:
+                if not has_printed_fname:
+                    print(f"**{fname}**")
+                    has_printed_fname = True
                 print(f"Noget er galt med rækken:\n**{row.strip()}**", end="\n")
                 print(f"{clean_error(e)}\n")
                 continue
             if is_duplicate(genes, gene_row):
+                if not has_printed_fname:
+                    print(f"**{fname}**")
+                    has_printed_fname = True
                 print(f"Noget er galt med rækken:\n**{row.strip()}**", end="\n")
                 print("Der er tale om en duplikat")
             else:
@@ -52,4 +54,9 @@ def validate_file(type_of_list: TypeOfListEnum, fname: Path):
 
 
 if __name__ == "__main__":
-    app()
+    for type_of_list in TypeOfListEnum:
+        dir = Path(type_of_list.value)
+        if not dir.exists():
+            continue
+        for file in dir.glob("*/*.csv"):
+            validate_file(type_of_list, file)
