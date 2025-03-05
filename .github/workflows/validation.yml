@@ -49,6 +49,12 @@ jobs:
       with:
         file-path: validation_output.txt
 
+    - name: Current branch
+      run: |
+        echo ${GITHUB_REF}
+        BRANCH_NAME=${GITHUB_REF#refs/heads/}
+        echo $BRANCH_NAME
+
     - name: Create combined files
       if: steps.check_files.outputs.has_content == 'false'
       run: |
