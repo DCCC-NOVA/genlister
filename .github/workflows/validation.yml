@@ -59,7 +59,7 @@ jobs:
         echo LALA
         git branch
         git status
-        git pull --ff-only origin ${{ github.head_ref }}
+        git pull --rebase origin ${{ github.head_ref }}
         source .venv/bin/activate
         python src/genlister/create_master_lists.py
         git add */*.csv
