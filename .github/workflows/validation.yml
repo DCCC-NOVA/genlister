@@ -54,13 +54,17 @@ jobs:
       run: |
         source .venv/bin/activate
         python src/genlister/create_master_lists.py
+        cat germline/combined.csv
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         if git show-ref --verify --quiet refs/heads/${{ github.head_ref }}; then
+          echo "Checking out to existing branch"
           git checkout ${{ github.head_ref }}
         else
+          echo "Making new branch"
           git checkout -b ${{ github.head_ref }}
         fi
+        git diff
         if git diff-index --quiet HEAD --; then
           echo "No changes to commit"
         else
