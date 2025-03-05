@@ -29,7 +29,7 @@ jobs:
       id: validate_csv
       run: |
         source .venv/bin/activate
-        python src/genlister/validate.py cnv cnv/moma/gener.csv > validation_output.txt
+        python src/genlister/validate.py > validation_output.txt
 
     - name: Check if validation output is not empty
       id: check_files
