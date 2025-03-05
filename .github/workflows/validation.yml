@@ -58,4 +58,6 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add */combined.csv
         git commit -m "Update combined gene lists"
-        git push origin ${{ github.ref }}
+        BRANCH_NAME=${GITHUB_REF#refs/heads/}
+        echo $BRANCH_NAME
+        git push origin $BRANCH_NAME
