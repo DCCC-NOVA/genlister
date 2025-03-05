@@ -51,10 +51,11 @@ jobs:
 
     - name: Current branch
       run: |
-        echo ${GITHUB_REF}
         BRANCH_NAME=${GITHUB_REF#refs/heads/}
+        echo ${GITHUB_REF}
         echo $BRANCH_NAME
         echo ${{ env.branch }}
+        echo ${{ github.head_ref }}
 
     - name: Create combined files
       if: steps.check_files.outputs.has_content == 'false'
@@ -65,6 +66,4 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add */combined.csv
         git commit -m "Update combined gene lists"
-        BRANCH_NAME=${GITHUB_REF#refs/heads/}
-        echo $BRANCH_NAME
-        git push origin $BRANCH_NAME
+        git push origin ${{ github.head_ref }}
