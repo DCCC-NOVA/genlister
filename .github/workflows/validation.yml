@@ -48,3 +48,13 @@ jobs:
       uses: thollander/actions-comment-pull-request@v3
       with:
         file-path: validation_output.txt
+
+    - name: Create combined files
+      if: steps.check_files.outputs.has_content == 'false'
+      run: |
+        python src/genlister/create_master_lists.py
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add */combined.csv
+        git commit -m "Update combined gene lists"
+        git push
