@@ -39,10 +39,8 @@ jobs:
       run: |
         if [ -s validation_output.txt ]; then
           echo "has_content=true" >> $GITHUB_OUTPUT
-          # echo "::set-output name=has_content::true"
         else
           echo "has_content=false" >> $GITHUB_OUTPUT
-          # echo "::set-output name=has_content::false"
         fi
 
     - name: PR comment with file
