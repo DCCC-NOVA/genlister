@@ -57,21 +57,11 @@ jobs:
         cat germline/combined.csv
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git status
         echo "lala"
         git branch
-        if git show-ref --verify --quiet refs/heads/${{ github.head_ref }}; then
-          echo "Checking out to existing branch"
-          git checkout ${{ github.head_ref }}
-        else
-          echo "Making new branch"
-          git checkout -b ${{ github.head_ref }}
-        fi
-        git diff
-        if git diff-index --quiet HEAD --; then
-          echo "No changes to commit"
-        else
-          git add .
-          git commit -m "Update combined gene lists"
-          git push origin ${{ github.head_ref }}
-        fi
+        git switch -c ${{ github.head_ref }}
+        git branch
+        echo "lala"
+        git add */*.csv
+        git commit -m "Update combined gene lists"
+        git push origin ${{ github.head_ref }}
