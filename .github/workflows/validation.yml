@@ -53,12 +53,11 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git switch -c ${{ github.head_ref }}
-        echo LALA
-        git branch
-        git status
         git pull --rebase origin ${{ github.head_ref }}
         source .venv/bin/activate
         python src/genlister/create_master_lists.py
-        git add */*.csv
-        git commit -m "Update combined gene lists"
-        git push origin ${{ github.head_ref }}
+        if git diff --exit-code; then
+          git add */*.csv
+          git commit -m "Update combined gene lists"
+          git push origin ${{ github.head_ref }}
+        fi
