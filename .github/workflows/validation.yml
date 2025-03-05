@@ -52,16 +52,12 @@ jobs:
     - name: Create combined files
       if: steps.check_files.outputs.has_content == 'false'
       run: |
-        source .venv/bin/activate
-        python src/genlister/create_master_lists.py
-        cat germline/combined.csv
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        echo "lala"
-        git branch
         git switch -c ${{ github.head_ref }}
-        git branch
-        echo "lala"
+        git pull
+        source .venv/bin/activate
+        python src/genlister/create_master_lists.py
         git add */*.csv
         git commit -m "Update combined gene lists"
         git push origin ${{ github.head_ref }}
