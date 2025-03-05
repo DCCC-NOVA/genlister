@@ -56,7 +56,7 @@ jobs:
         git pull --rebase origin ${{ github.head_ref }}
         source .venv/bin/activate
         python src/genlister/create_master_lists.py
-        if git diff --exit-code; then
+        if $(git status | grep -q "Changes not staged for commit\|Untracked files"); then
           git add */*.csv
           git commit -m "Update combined gene lists"
           git push origin ${{ github.head_ref }}
