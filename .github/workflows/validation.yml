@@ -44,7 +44,7 @@ jobs:
         fi
 
     - name: PR comment with file
-      if: $GITHUB_OUTPUT == 'true'
+      if: steps.check_files.outputs.has_content == 'true'
       uses: thollander/actions-comment-pull-request@v3
       with:
         file-path: validation_output.txt
