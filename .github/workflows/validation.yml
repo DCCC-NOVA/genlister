@@ -33,15 +33,16 @@ jobs:
       run: |
         source .venv/bin/activate
         python src/genlister/validate.py cnv cnv/moma/gener.csv > validation_output.txt
-        echo "::set-output name=comment::$(cat validation_output.txt)"
 
     - name: Check if validation output is not empty
       id: check_files
       run: |
         if [ -s validation_output.txt ]; then
-          echo "::set-output name=has_content::true"
+          echo "has_content=true" >> $GITHUB_OUTPUT
+          # echo "::set-output name=has_content::true"
         else
-          echo "::set-output name=has_content::false"
+          echo "has_content=false" >> $GITHUB_OUTPUT
+          # echo "::set-output name=has_content::false"
         fi
 
     - name: PR comment with file
