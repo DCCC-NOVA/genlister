@@ -55,7 +55,7 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git switch -c ${{ github.head_ref }}
-        git pull
+        git pull origin ${{ github.head_ref }}
         source .venv/bin/activate
         python src/genlister/create_master_lists.py
         git add */*.csv
