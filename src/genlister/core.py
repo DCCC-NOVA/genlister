@@ -1,4 +1,5 @@
 import datetime
+from collections.abc import Sequence
 from enum import Enum
 from typing import override
 
@@ -61,45 +62,45 @@ class CombinedCSV(CSVBase):
                 self.notes += f"; {department}: {row.notes}"
             else:
                 self.notes = f"{department}: {row.notes}"
+        for col in self.type_specific_set:
+            if row.model_fields[col].annotation is bool:
+                setattr(self, col, getattr(row, col) or getattr(self, col))
 
     @classmethod
     def csv_header(cls) -> str:
-        defaults = (
-            "hugo_name",
-            "hgnc_id",
-            "protocol",
-            "date_added",
-            "notes",
-        )
         type_specific_set = tuple(
-            set(cls.model_fields.keys()) - set(defaults) - set(("departments", "total"))
+            set(cls.model_fields.keys())
+            - set(cls.defaults())
+            - set(("departments", "total"))
         )
-        return ",".join(defaults + type_specific_set + ("departments", "total"))
+        return ",".join(
+            tuple(cls.defaults()) + type_specific_set + ("departments", "total")
+        )
+
+    @staticmethod
+    def defaults() -> Sequence[str]:
+        return tuple(CSVBase.model_fields.keys())
+
+    @property
+    def type_specific_set(self) -> set[str]:
+        return (
+            self.model_fields_set
+            - set(CombinedCSV.defaults())
+            - set(("departments", "total"))
+        )
 
     @override
     def __str__(self) -> str:
-        seen_in = f"{len(self.departments)}/{self.total}"
-
-        defaults = (
-            "hugo_name",
-            "hgnc_id",
-            "protocol",
-            "date_added",
-            "notes",
-        )
-        type_specific_set = (
-            self.model_fields_set - set(defaults) - set(("departments", "total"))
-        )
         res = ""
-        for name in defaults:
+        for name in self.defaults():
             value = getattr(self, name)
             res += f"{value},"
-        for name in type_specific_set:
+        for name in self.type_specific_set:
             value = getattr(self, name)
             res += f"{value},"
 
         res += f"{';'.join(sorted(self.departments))},"
-        res += f"{seen_in}"
+        res += f"{len(self.departments)}/{self.total}"
         return res
 
 
