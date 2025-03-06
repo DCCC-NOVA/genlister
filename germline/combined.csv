@@ -1,16 +1,16 @@
 hugo_name,hgnc_id,protocol,date_added,notes,behandlings_relevans,departments,total
-ATM,795,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
-BRCA1,1100,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
-BRCA2,1101,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
-MLH1,7127,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
-MLH3,7128,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
-MSH2,7325,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
-MSH3,7326,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
-MSH6,7329,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
-PALB2,26144,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
-PMS2,9122,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
-RAD51C,9820,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
-RAD51D,9823,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
+ATM,795,,2025-03-06,afmd: behandlingsrelevans skal opdateres: onkologi,False,afmd;gm;moma;ouh;vejle,5/5
+BRCA1,1100,,2025-03-06,afmd: behandlingsrelevans skal opdateres: onkologi,False,afmd;gm;moma;ouh;vejle,5/5
+BRCA2,1101,,2025-03-06,afmd: behandlingsrelevans skal opdateres: onkologi,False,afmd;gm;moma;ouh;vejle,5/5
+MLH1,7127,,2025-03-06,afmd: behandlingsrelevans skal opdateres: onkologi,False,afmd;gm;moma;ouh;vejle,5/5
+MLH3,7128,,2025-03-06,afmd: behandlingsrelevans skal opdateres: onkologi,False,afmd;gm;moma;ouh;vejle,5/5
+MSH2,7325,,2025-03-06,afmd: behandlingsrelevans skal opdateres: onkologi,False,afmd;gm;moma;ouh;vejle,5/5
+MSH3,7326,,2025-03-06,afmd: behandlingsrelevans skal opdateres: onkologi,False,afmd;gm;moma;ouh;vejle,5/5
+MSH6,7329,,2025-03-06,afmd: behandlingsrelevans skal opdateres: onkologi,False,afmd;gm;moma;ouh;vejle,5/5
+PALB2,26144,,2025-03-06,afmd: behandlingsrelevans skal opdateres: onkologi,False,afmd;gm;moma;ouh;vejle,5/5
+PMS2,9122,,2025-03-06,afmd: behandlingsrelevans skal opdateres: onkologi,False,afmd;gm;moma;ouh;vejle,5/5
+RAD51C,9820,,2025-03-06,afmd: behandlingsrelevans skal opdateres: onkologi,False,afmd;gm;moma;ouh;vejle,5/5
+RAD51D,9823,,2025-03-06,afmd: behandlingsrelevans skal opdateres: onkologi,False,afmd;gm;moma;ouh;vejle,5/5
 CHEK2,16627,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
 EGLN1,1232,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
 EGLN2,14660,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
@@ -26,7 +26,7 @@ SDHAF2,26034,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
 SDHB,10681,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
 SDHC,10682,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
 SDHD,10683,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
-TP53,11998,,2025-03-06,,False,afmd;gm;ouh;vejle,4/5
+TP53,11998,?,2025-03-06,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd;gm;ouh;vejle,4/5
 APC,583,,2025-03-06,,False,gm;ouh;vejle,3/5
 BARD1,952,,2025-03-06,,False,moma;ouh;vejle,3/5
 BMPR1A,1076,,2025-03-06,,False,gm;ouh;vejle,3/5
@@ -41,7 +41,7 @@ PTEN,9588,,2025-03-06,,False,gm;ouh;vejle,3/5
 RB1,9884,,2025-03-06,,False,gm;ouh;vejle,3/5
 SMAD4,6770,,2025-03-06,,False,gm;ouh;vejle,3/5
 STK11,11389,,2025-03-06,,False,gm;ouh;vejle,3/5
-TERT,11730,,2025-03-06,,False,afmd;ouh;vejle,3/5
+TERT,11730,?,2025-03-06,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd;ouh;vejle,3/5
 VHL,12687,,2025-03-06,,False,gm;ouh;vejle,3/5
 WT1,12796,,2025-03-06,,False,gm;ouh;vejle,3/5
 ACD,25070,,2025-03-06,,False,ouh;vejle,2/5
@@ -64,7 +64,7 @@ MRE11,7230,,2025-03-06,,False,gm;moma,2/5
 NBN,7652,,2025-03-06,,False,gm;moma,2/5
 NF1,7765,,2025-03-06,,False,ouh;vejle,2/5
 NTHL1,8028,,2025-03-06,,False,ouh;vejle,2/5
-PMS1,9121,,2025-03-06,,False,afmd;moma,2/5
+PMS1,9121,,2025-03-05,afmd: behandlingsrelevans skal opdateres: hæmatologi,False,afmd;moma,2/5
 POLD1,9175,,2025-03-06,,False,ouh;vejle,2/5
 POT1,17284,,2025-03-06,,False,ouh;vejle,2/5
 PTCH1,9585,,2025-03-06,,False,ouh;vejle,2/5
@@ -80,25 +80,25 @@ TSC1,12362,,2025-03-06,,False,ouh;vejle,2/5
 TSC2,12363,,2025-03-06,,False,ouh;vejle,2/5
 ABRAXAS1,25829,,2025-03-05,,False,moma,1/5
 ALK,427,,2025-03-05,,False,moma,1/5
-ANKRD26,29186,,2025-03-06,,False,afmd,1/5
+ANKRD26,29186,?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
 ATR,882,,2025-03-06,,False,gm,1/5
 CDK12,24224,,2025-03-06,,False,gm,1/5
-CEBPA,1833,,2025-03-06,,False,afmd,1/5
+CEBPA,1833,?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
 CHEK1,1925,,2025-03-05,,False,moma,1/5
-DDX41,18674,,2025-03-06,,False,afmd,1/5
-ETV6,3495,,2025-03-06,,False,afmd,1/5
+DDX41,18674,?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
+ETV6,3495,?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
 FANCA,3582,,2025-03-06,,False,gm,1/5
 FGFR1,3688,,2025-03-05,,False,moma,1/5
 FGFR2,3689,,2025-03-05,,False,moma,1/5
 FGFR3,3690,,2025-03-05,,False,moma,1/5
 FGFR4,3691,,2025-03-05,,False,moma,1/5
-GATA3,4172,,2025-03-06,,False,afmd,1/5
+GATA3,4172,?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
 MAX,6913,,2025-03-06,,False,gm,1/5
 NTRK1,8031,,2025-03-05,,False,moma,1/5
 NTRK2,8032,,2025-03-05,,False,moma,1/5
 NTRK3,8033,,2025-03-05,,False,moma,1/5
 RAD51B,9822,,2025-03-06,,False,gm,1/5
 ROS1,10261,,2025-03-05,,False,moma,1/5
-RUNX1,10471,,2025-03-06,,False,afmd,1/5
-TERC,11727,,2025-03-06,,False,afmd,1/5
+RUNX1,10471,?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
+TERC,11727,?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
 TMEM127,26038,,2025-03-06,,False,gm,1/5
