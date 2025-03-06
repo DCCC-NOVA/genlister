@@ -42,16 +42,25 @@ class CSVBase(BaseModel):
     def __hash__(self) -> int:
         return hash((self.hugo_name, self.hgnc_id))
 
-    def to_csv(self) -> str:
-        return ",".join((str(getattr(self, k)) for k in self.model_fields))
-
 
 class CombinedCSV(CSVBase):
     departments: set[str]
     total: int
 
-    def add_department(self, department: str):
+    def add_info(self, row: CSVBase, department: str):
         self.departments.add(department)
+        if self == row:
+            # First entry of this gene
+            if row.notes:
+                self.notes: str | None = f"{department}: {row.notes}"
+            return
+
+        self.date_added: datetime.date = max((self.date_added, row.date_added))
+        if row.notes:
+            if self.notes:
+                self.notes += f"; {department}: {row.notes}"
+            else:
+                self.notes = f"{department}: {row.notes}"
 
     @classmethod
     def csv_header(cls) -> str:
