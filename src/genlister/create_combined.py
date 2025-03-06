@@ -14,7 +14,7 @@ def get_total_departments(dir: Path) -> int:
 def combine_files(dir: Path) -> None:
     total_departments = get_total_departments(dir)
     combinator = TYPE2COMBINED[type_of_list]
-    csv_header: str = ",".join((key for key in combinator.model_fields))
+    csv_header = combinator.csv_header()
     output = dir / "combined.csv"
     genes: dict[str, CombinedCSV] = dict()
     default = {"total": total_departments, "departments": set()}
