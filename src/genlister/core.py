@@ -53,6 +53,20 @@ class CombinedCSV(CSVBase):
     def add_department(self, department: str):
         self.departments.add(department)
 
+    @classmethod
+    def csv_header(cls) -> str:
+        defaults = (
+            "hugo_name",
+            "hgnc_id",
+            "protocol",
+            "date_added",
+            "notes",
+        )
+        type_specific_set = tuple(
+            set(cls.model_fields.keys()) - set(defaults) - set(("departments", "total"))
+        )
+        return ",".join(defaults + type_specific_set + ("departments", "total"))
+
     @override
     def __str__(self) -> str:
         seen_in = f"{len(self.departments)}/{self.total}"
