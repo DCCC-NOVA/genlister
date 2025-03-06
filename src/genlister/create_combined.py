@@ -25,9 +25,9 @@ def combine_files(dir: Path) -> None:
                 values = {k: v for k, v in zip(header, row.strip().split(","))}
                 candidate = combinator.model_validate(values | default)
                 if gene_row := genes.get(candidate.hugo_name):
-                    gene_row.add_department(fname.parent.name)
+                    gene_row.add_info(candidate, fname.parent.name)
                 else:
-                    candidate.add_department(fname.parent.name)
+                    candidate.add_info(candidate, fname.parent.name)
                     genes[candidate.hugo_name] = candidate
     if not genes:
         return
