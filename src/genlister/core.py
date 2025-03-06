@@ -46,7 +46,45 @@ class CSVBase(BaseModel):
         return ",".join((str(getattr(self, k)) for k in self.model_fields))
 
 
+class CombinedCSV(CSVBase):
+    departments: set[str]
+    total: int
+
+    def add_department(self, department: str):
+        self.departments.add(department)
+
+    @override
+    def __str__(self) -> str:
+        seen_in = f"{len(self.departments)}/{self.total}"
+
+        defaults = (
+            "hugo_name",
+            "hgnc_id",
+            "protocol",
+            "date_added",
+            "notes",
+        )
+        type_specific_set = (
+            self.model_fields_set - set(defaults) - set(("departments", "total"))
+        )
+        res = ""
+        for name in defaults:
+            value = getattr(self, name)
+            res += f"{value},"
+        for name in type_specific_set:
+            value = getattr(self, name)
+            res += f"{value},"
+
+        res += f"{';'.join(sorted(self.departments))},"
+        res += f"{seen_in}"
+        return res
+
+
 class Fusion(CSVBase):
+    pass
+
+
+class FusionCombined(Fusion, CombinedCSV):
     pass
 
 
@@ -54,12 +92,27 @@ class CNV(CSVBase):
     gain_loss_both: GainLossBothEnum
 
 
+class CNVCombined(CNV, CombinedCSV):
+    pass
+
+
 class Germline(CSVBase):
     behandlings_relevans: bool
+
+
+class GermlineCombined(Germline, CombinedCSV):
+    pass
 
 
 TYPE2VALIDATOR: dict[TypeOfListEnum, type[CSVBase]] = {
     TypeOfListEnum.CNV: CNV,
     TypeOfListEnum.FUSION: Fusion,
     TypeOfListEnum.GERMLINE: Germline,
+}
+
+
+TYPE2COMBINED: dict[TypeOfListEnum, type[CombinedCSV]] = {
+    TypeOfListEnum.CNV: CNVCombined,
+    TypeOfListEnum.FUSION: FusionCombined,
+    TypeOfListEnum.GERMLINE: GermlineCombined,
 }
