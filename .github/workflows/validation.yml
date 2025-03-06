@@ -46,6 +46,10 @@ jobs:
       with:
         file-path: validation_output.txt
 
+    - name: Fail if validation output is not empty
+      if: steps.check_files.outputs.has_content == 'true'
+      run: exit 1
+
     - name: Create combined files
       if: steps.check_files.outputs.has_content == 'false'
       run: |
