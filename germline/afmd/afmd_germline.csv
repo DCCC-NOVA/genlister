@@ -1,5 +1,23 @@
 hugo_name,hgnc_id,protocol,date_added,notes,behandlings_relevans
-BRCA1,1100,,2025-03-05,,false
-BRCA2,1101,,2025-03-05,,false
-RET,9967,,2025-03-05,,false
-TP53,11998,,2025-03-05,,false
+ATM,795,?,2020-10-26,behandlingsrelevans skal opdateres,onkologi
+BRCA1,1100,?,2020-10-27,behandlingsrelevans skal opdateres,onkologi
+BRCA2,1101,?,2020-10-28,behandlingsrelevans skal opdateres,onkologi
+MLH1,7127,?,2020-10-29,behandlingsrelevans skal opdateres,onkologi
+MLH3,7128,?,2020-10-30,behandlingsrelevans skal opdateres,onkologi
+MSH2,7325,?,2020-10-31,behandlingsrelevans skal opdateres,onkologi
+MSH3,7326,?,2020-10-32,behandlingsrelevans skal opdateres,onkologi
+MSH6,7329,?,2020-10-33,behandlingsrelevans skal opdateres,onkologi
+PALB2,26144,?,2020-10-34,behandlingsrelevans skal opdateres,onkologi
+PMS2,9122,?,2020-10-35,behandlingsrelevans skal opdateres,onkologi
+RAD51C,9820,?,2020-10-36,behandlingsrelevans skal opdateres,onkologi
+RAD51D,9823,?,2020-10-37,behandlingsrelevans skal opdateres,onkologi
+TP53,11998,?,2021-04-07,behandlingsrelevans skal opdateres,hæmatologi
+PMS1,9121,?,2021-04-08,behandlingsrelevans skal opdateres,hæmatologi
+TERT,11730,?,2021-04-09,behandlingsrelevans skal opdateres,hæmatologi
+ANKRD26,29186,?,2021-04-10,behandlingsrelevans skal opdateres,hæmatologi
+CEBPA,1833,?,2021-04-11,behandlingsrelevans skal opdateres,hæmatologi
+DDX41,18674,?,2021-04-12,behandlingsrelevans skal opdateres,hæmatologi
+ETV6,3495,?,2021-04-13,behandlingsrelevans skal opdateres,hæmatologi
+GATA3,4172,?,2021-04-14,behandlingsrelevans skal opdateres,hæmatologi
+RUNX1,10471,?,2021-04-15,behandlingsrelevans skal opdateres,hæmatologi
+TERC,11727,?,2021-04-16,behandlingsrelevans skal opdateres,hæmatologi
