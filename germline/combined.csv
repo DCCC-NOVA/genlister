@@ -1,4 +1,4 @@
-hugo_name,hgnc_id,protocol,date_added,notes,departments,total,behandlings_relevans
+hugo_name,hgnc_id,protocol,date_added,notes,behandlings_relevans,departments,total
 ATM,795,,2025-03-05,,False,afmd;gm;moma;ouh;vejle,5/5
 BRCA1,1100,,2025-03-05,,False,afmd;gm;moma;ouh;vejle,5/5
 BRCA2,1101,,2025-03-05,,False,afmd;gm;moma;ouh;vejle,5/5
