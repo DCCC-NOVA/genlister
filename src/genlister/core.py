@@ -101,6 +101,14 @@ class CombinedCSV(CSVBase):
         return res
 
 
+class SNV(CSVBase):
+    pass
+
+
+class SNVCombined(SNV, CombinedCSV):
+    pass
+
+
 class Fusion(CSVBase):
     pass
 
