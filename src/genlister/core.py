@@ -49,6 +49,17 @@ class CombinedCSV(CSVBase):
     total: int
 
     def add_info(self, row: CSVBase, department: str):
+        """
+        Adds information from a given row to the current instance.
+
+        Args:
+            row (CSVBase): The row containing the information to be added.
+            department (str): The department associated with the row.
+
+        This method updates the current instance with information from the given row. It adds the department to the
+        departments set and updates the notes and date_added fields. If the row is the first entry for this gene,
+        it initializes the notes field. For boolean fields, it updates the field if the row has a True value.
+        """
         self.departments.add(department)
         if self == row:
             # First entry of this gene
@@ -64,6 +75,9 @@ class CombinedCSV(CSVBase):
                 self.notes = f"{department}: {row.notes}"
         for col in self.type_specific_set():
             if row.model_fields[col].annotation is bool:
+                # This sets the boolean field to True if the row or self is True,
+                # which means for the case of e.g. behandlings_relevans, it will be
+                # True if any department has this set
                 setattr(self, col, getattr(row, col) or getattr(self, col))
 
     @classmethod
@@ -135,6 +149,7 @@ class GermlineCombined(Germline, CombinedCSV):
 
 TYPE2VALIDATOR: dict[TypeOfListEnum, type[CSVBase]] = {
     TypeOfListEnum.CNV: CNV,
+    TypeOfListEnum.SNV: SNV,
     TypeOfListEnum.FUSION: Fusion,
     TypeOfListEnum.GERMLINE: Germline,
 }
@@ -142,6 +157,7 @@ TYPE2VALIDATOR: dict[TypeOfListEnum, type[CSVBase]] = {
 
 TYPE2COMBINED: dict[TypeOfListEnum, type[CombinedCSV]] = {
     TypeOfListEnum.CNV: CNVCombined,
+    TypeOfListEnum.SNV: SNVCombined,
     TypeOfListEnum.FUSION: FusionCombined,
     TypeOfListEnum.GERMLINE: GermlineCombined,
 }

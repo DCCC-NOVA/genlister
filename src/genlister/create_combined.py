@@ -4,14 +4,38 @@ from genlister.core import TYPE2COMBINED, CombinedCSV, TypeOfListEnum
 
 
 def get_total_departments(dir: Path) -> int:
-    s = 0
-    for candidate in dir.iterdir():
-        if candidate.is_dir():
-            s += 1
-    return s
+    """Counts the number of subdirectories in the specified directory.
+
+    Args:
+        dir (Path): The directory to count subdirectories in.
+
+    Returns:
+        int: The total number of subdirectories in the specified directory.
+    """
+    return sum(1 for d in dir.iterdir() if d.is_dir())
 
 
 def combine_files(dir: Path) -> None:
+    """Combines CSV files from a specified directory into a single CSV file.
+
+    Args:
+        dir (Path): The directory containing the CSV files to be combined.
+
+    Returns:
+        None
+
+    This function performs the following steps:
+    1. Retrieves the total number of departments from the directory.
+    2. Determines the type of combinator to use based on the type of list.
+    3. Defines the CSV header for the output file.
+    4. Initializes an empty dictionary to store gene information.
+    5. Iterates through each CSV file in the directory, reading and processing each row.
+    6. Combines the information from each row into the gene dictionary.
+    7. Writes the combined gene information to an output CSV file.
+
+    The output CSV file is sorted by the number of departments (in descending order) and then by the gene name.
+    If no gene information is found, the function returns without creating an output file.
+    """
     total_departments = get_total_departments(dir)
     combinator = TYPE2COMBINED[type_of_list]
     csv_header = combinator.csv_header()
