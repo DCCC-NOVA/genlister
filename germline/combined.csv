@@ -11,6 +11,7 @@ PALB2,26144,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
 PMS2,9122,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
 RAD51C,9820,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
 RAD51D,9823,,2025-03-06,,False,afmd;gm;moma;ouh;vejle,5/5
+TP53,42,,2025-04-02,,False,afmd;gm;moma;ouh;vejle,5/5
 CHEK2,16627,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
 EGLN1,1232,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
 EGLN2,14660,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
@@ -26,7 +27,6 @@ SDHAF2,26034,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
 SDHB,10681,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
 SDHC,10682,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
 SDHD,10683,,2025-03-06,,False,gm;moma;ouh;vejle,4/5
-TP53,11998,,2025-03-06,,False,afmd;gm;ouh;vejle,4/5
 APC,583,,2025-03-06,,False,gm;ouh;vejle,3/5
 BARD1,952,,2025-03-06,,False,moma;ouh;vejle,3/5
 BMPR1A,1076,,2025-03-06,,False,gm;ouh;vejle,3/5
