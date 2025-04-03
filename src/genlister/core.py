@@ -66,6 +66,10 @@ class CombinedCSV(CSVBase):
             # First entry of this gene
             if row.notes:
                 self.notes: str | None = f"{department}: {row.notes}"
+            if row.protocol_specification:
+                self.protocol_specification: str | None = (
+                    f"{department}: {row.protocol_specification}"
+                )
             return
 
         self.date_added: datetime.date = max((self.date_added, row.date_added))
@@ -74,6 +78,16 @@ class CombinedCSV(CSVBase):
                 self.notes += f"; {department}: {row.notes}"
             else:
                 self.notes = f"{department}: {row.notes}"
+        if row.protocol_specification:
+            if self.protocol_specification:
+                self.protocol_specification += (
+                    f"; {department}: {row.protocol_specification}"
+                )
+            else:
+                self.protocol_specification = (
+                    f"{department}: {row.protocol_specification}"
+                )
+
         for col in self.type_specific_set():
             if row.model_fields[col].annotation is bool:
                 # This sets the boolean field to True if the row or self is True,
