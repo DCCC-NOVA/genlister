@@ -23,7 +23,8 @@ class GainLossBothEnum(Enum):
 class CSVBase(BaseModel):
     hugo_name: str
     hgnc_id: int
-    protocol: str | None
+    protocol: bool
+    protocol_specification: str | None
     date_added: datetime.date
     notes: str | None
 
