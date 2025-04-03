@@ -15,6 +15,19 @@ def get_total_departments(dir: Path) -> int:
     return sum(1 for d in dir.iterdir() if d.is_dir())
 
 
+def is_duplicate(genes: list[CombinedCSV], candidate: CombinedCSV) -> bool:
+    """Check if a candidate gene is a duplicate of any gene in the list.
+
+    Args:
+        genes (list[CombinedCSV]): List of existing genes.
+        candidate (CombinedCSV): Candidate gene to check.
+
+    Returns:
+        bool: True if the candidate gene is a duplicate, False otherwise.
+    """
+    return any(gene.hugo_name == candidate.hugo_name for gene in genes)
+
+
 def combine_files(dir: Path) -> None:
     """Combines CSV files from a specified directory into a single CSV file.
 
@@ -40,7 +53,7 @@ def combine_files(dir: Path) -> None:
     combinator = TYPE2COMBINED[type_of_list]
     csv_header = combinator.csv_header()
     output = dir / "combined.csv"
-    genes: dict[str, CombinedCSV] = dict()
+    genes: dict[int, CombinedCSV] = dict()
     default = {"total": total_departments, "departments": set()}
     for fname in dir.glob("*/*.csv"):
         with open(fname, "r") as f:
@@ -48,11 +61,15 @@ def combine_files(dir: Path) -> None:
             for row in f:
                 values = {k: v for k, v in zip(header, row.strip().split(","))}
                 candidate = combinator.model_validate(values | default)
-                if gene_row := genes.get(candidate.hugo_name):
+                if gene_row := genes.get(candidate.hgnc_id):
                     gene_row.add_info(candidate, fname.parent.name)
                 else:
+                    if is_duplicate(list(genes.values()), candidate):
+                        raise ValueError(
+                            f'Gene "{candidate.hugo_name}" with HGNC_ID "{candidate.hgnc_id}" is in another department with another HGNC_ID. This is not allowed.'
+                        )
                     candidate.add_info(candidate, fname.parent.name)
-                    genes[candidate.hugo_name] = candidate
+                    genes[candidate.hgnc_id] = candidate
     if not genes:
         return
 
