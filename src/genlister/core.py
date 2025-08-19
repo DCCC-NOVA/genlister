@@ -1,4 +1,5 @@
 import datetime
+from collections.abc import Sequence
 from enum import Enum
 from typing import override
 
@@ -22,7 +23,8 @@ class GainLossBothEnum(Enum):
 class CSVBase(BaseModel):
     hugo_name: str
     hgnc_id: int
-    protocol: str | None
+    protocol: bool
+    protocol_specification: str | None
     date_added: datetime.date
     notes: str | None
 
@@ -48,11 +50,26 @@ class CombinedCSV(CSVBase):
     total: int
 
     def add_info(self, row: CSVBase, department: str):
+        """
+        Adds information from a given row to the current instance.
+
+        Args:
+            row (CSVBase): The row containing the information to be added.
+            department (str): The department associated with the row.
+
+        This method updates the current instance with information from the given row. It adds the department to the
+        departments set and updates the notes and date_added fields. If the row is the first entry for this gene,
+        it initializes the notes field. For boolean fields, it updates the field if the row has a True value.
+        """
         self.departments.add(department)
         if self == row:
             # First entry of this gene
             if row.notes:
                 self.notes: str | None = f"{department}: {row.notes}"
+            if row.protocol_specification:
+                self.protocol_specification: str | None = (
+                    f"{department}: {row.protocol_specification}"
+                )
             return
 
         self.date_added: datetime.date = max((self.date_added, row.date_added))
@@ -61,46 +78,64 @@ class CombinedCSV(CSVBase):
                 self.notes += f"; {department}: {row.notes}"
             else:
                 self.notes = f"{department}: {row.notes}"
+        if row.protocol_specification:
+            if self.protocol_specification:
+                self.protocol_specification += (
+                    f"; {department}: {row.protocol_specification}"
+                )
+            else:
+                self.protocol_specification = (
+                    f"{department}: {row.protocol_specification}"
+                )
+
+        for col in self.type_specific_set():
+            if row.model_fields[col].annotation is bool:
+                # This sets the boolean field to True if the row or self is True,
+                # which means for the case of e.g. behandlings_relevans, it will be
+                # True if any department has this set
+                setattr(self, col, getattr(row, col) or getattr(self, col))
 
     @classmethod
     def csv_header(cls) -> str:
-        defaults = (
-            "hugo_name",
-            "hgnc_id",
-            "protocol",
-            "date_added",
-            "notes",
+        return ",".join(
+            tuple(cls.defaults())
+            + tuple(cls.type_specific_set())
+            + ("departments", "total")
         )
-        type_specific_set = tuple(
-            set(cls.model_fields.keys()) - set(defaults) - set(("departments", "total"))
+
+    @staticmethod
+    def defaults() -> Sequence[str]:
+        return tuple(CSVBase.model_fields.keys())
+
+    @classmethod
+    def type_specific_set(cls) -> Sequence[str]:
+        return tuple(
+            set(cls.model_fields.keys())
+            - set(CombinedCSV.defaults())
+            - set(("departments", "total"))
         )
-        return ",".join(defaults + type_specific_set + ("departments", "total"))
 
     @override
     def __str__(self) -> str:
-        seen_in = f"{len(self.departments)}/{self.total}"
-
-        defaults = (
-            "hugo_name",
-            "hgnc_id",
-            "protocol",
-            "date_added",
-            "notes",
-        )
-        type_specific_set = (
-            self.model_fields_set - set(defaults) - set(("departments", "total"))
-        )
         res = ""
-        for name in defaults:
+        for name in self.defaults():
             value = getattr(self, name)
             res += f"{value},"
-        for name in type_specific_set:
+        for name in self.type_specific_set():
             value = getattr(self, name)
             res += f"{value},"
 
         res += f"{';'.join(sorted(self.departments))},"
-        res += f"{seen_in}"
+        res += f"{len(self.departments)}/{self.total}"
         return res
+
+
+class SNV(CSVBase):
+    pass
+
+
+class SNVCombined(SNV, CombinedCSV):
+    pass
 
 
 class Fusion(CSVBase):
@@ -129,6 +164,7 @@ class GermlineCombined(Germline, CombinedCSV):
 
 TYPE2VALIDATOR: dict[TypeOfListEnum, type[CSVBase]] = {
     TypeOfListEnum.CNV: CNV,
+    TypeOfListEnum.SNV: SNV,
     TypeOfListEnum.FUSION: Fusion,
     TypeOfListEnum.GERMLINE: Germline,
 }
@@ -136,6 +172,7 @@ TYPE2VALIDATOR: dict[TypeOfListEnum, type[CSVBase]] = {
 
 TYPE2COMBINED: dict[TypeOfListEnum, type[CombinedCSV]] = {
     TypeOfListEnum.CNV: CNVCombined,
+    TypeOfListEnum.SNV: SNVCombined,
     TypeOfListEnum.FUSION: FusionCombined,
     TypeOfListEnum.GERMLINE: GermlineCombined,
 }

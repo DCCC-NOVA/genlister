@@ -6,6 +6,14 @@ from genlister.core import TYPE2VALIDATOR, CSVBase, TypeOfListEnum
 
 
 def clean_error(e: ValidationError) -> str:
+    """Cleans a ValidationError object and returns a formatted string.
+
+    Args:
+        e (ValidationError): The ValidationError object to be cleaned.
+
+    Returns:
+        str: A formatted string with cleaned error messages.
+    """
     res: list[str] = []
     for index, line in enumerate(str(e).split("\n")):
         match index % 3:
@@ -19,12 +27,37 @@ def clean_error(e: ValidationError) -> str:
 
 
 def is_duplicate(genes: list[CSVBase], gene_row: CSVBase) -> bool:
+    """Checks if a gene row is a duplicate based on HUGO name or HGNC ID.
+
+    Args:
+        genes (list[CSVBase]): A list of CSVBase objects representing existing genes.
+        gene_row (CSVBase): The CSVBase object representing the gene row to check for duplication.
+
+    Returns:
+        bool: True if the gene row is a duplicate, False otherwise.
+    """
     return any(gene.hugo_name == gene_row.hugo_name for gene in genes) or any(
         gene.hgnc_id == gene_row.hgnc_id for gene in genes
     )
 
 
 def validate_file(type_of_list: TypeOfListEnum, fname: Path):
+    """Validates a CSV file based on the specified type of list.
+
+    This function reads a CSV file, validates each row against a specified validator,
+    and checks for duplicates based on HUGO name or HGNC ID. If any validation errors
+    or duplicates are found, it prints relevant error messages.
+
+    Args:
+        type_of_list (TypeOfListEnum): The type of list to validate against.
+        fname (Path): The path to the CSV file to be validated.
+
+    Raises:
+        IOError: If the specified file does not exist.
+
+    Returns:
+        None
+    """
     if not fname.exists():
         raise IOError(f"File not found: {fname}")
     validator = TYPE2VALIDATOR[type_of_list]

@@ -1,7 +1,7 @@
 [project]
 name = "genlister"
 version = "0.1.0"
-description = "Add your description here"
+description = "Project to organize and generate gene lists and validation across Danish genetic departments."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Andreasen", email = "daniel@clin.au.dk" }
