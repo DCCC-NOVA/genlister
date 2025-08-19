@@ -1,48 +1,48 @@
 hugo_name,hgnc_id,protocol,protocol_specification,date_added,notes,behandlings_relevans
-APC,583,false,,2025-03-06,,false
-ATM,795,false,,2025-03-06,,false
-ATR,882,false,,2025-03-06,,false
-BMPR1A,1076,false,,2025-03-06,,false
-BRCA1,1100,false,,2025-03-06,,false
-BRCA2,1101,false,,2025-03-06,,false
-CDK12,24224,false,,2025-03-06,,false
-CHEK2,16627,false,,2025-03-06,,false
-EGLN1,1232,false,,2025-03-06,,false
-EGLN2,14660,false,,2025-03-06,,false
-ELOC,11617,false,,2025-03-06,,false
-EPAS1,3374,false,,2025-03-06,,false
-FANCA,3582,false,,2025-03-06,,false
-FH,3700,false,,2025-03-06,,false
-MAX,6913,false,,2025-03-06,,false
-MDH2,6971,false,,2025-03-06,,false
-MEN1,7010,false,,2025-03-06,,false
-MET,7029,false,,2025-03-06,,false
-MLH1,7127,false,,2025-03-06,,false
-MLH3,7128,false,,2025-03-06,,false
-MRE11,7230,false,,2025-03-06,,false
-MSH2,7325,false,,2025-03-06,,false
-MSH3,7326,false,,2025-03-06,,false
-MSH6,7329,false,,2025-03-06,,false
-MUTYH,7527,false,,2025-03-06,,false
-NBN,7652,false,,2025-03-06,,false
-NF2,7773,false,,2025-03-06,,false
-PALB2,26144,false,,2025-03-06,,false
-PMS2,9122,false,,2025-03-06,,false
-POLE,9177,false,,2025-03-06,,false
-PTEN,9588,false,,2025-03-06,,false
-RAD51B,9822,false,,2025-03-06,,false
-RAD51C,9820,false,,2025-03-06,,false
-RAD51D,9823,false,,2025-03-06,,false
-RB1,9884,false,,2025-03-06,,false
-RET,9967,false,,2025-03-06,,false
-SDHA,10680,false,,2025-03-06,,false
-SDHAF2,26034,false,,2025-03-06,,false
-SDHB,10681,false,,2025-03-06,,false
-SDHC,10682,false,,2025-03-06,,false
-SDHD,10683,false,,2025-03-06,,false
-SMAD4,6770,false,,2025-03-06,,false
-STK11,11389,false,,2025-03-06,,false
-TMEM127,26038,false,,2025-03-06,,false
-TP53,11998,false,,2025-03-06,,false
-VHL,12687,false,,2025-03-06,,false
-WT1,12796,false,,2025-03-06,,false
+APC,583,false,,2025-06-03,ACMG SF v.3.2,false
+ATM,795,true,EIK-1003,2025-06-03,,false
+ATR,882,true,EIK-1003,2025-06-03,,false
+BMPR1A,1076,false,,2025-06-03,ACMG SF v.3.2,false
+BRCA1,1100,true,ProTarget,2025-06-03,ACMG SF v.3.2,true
+BRCA2,1101,true,ProTarget,2025-06-03,ACMG SF v.3.2,true
+CDK12,24224,true,EIK-1003,2025-06-03,,false
+CHEK2,16627,true,EIK-1003,2025-06-03,,false
+EGLN1,1232,true,MK6482,2025-06-03,,false
+EGLN2,14660,true,MK6482,2025-06-03,,false
+ELOC,11617,true,MK6482,2025-06-03,,false
+EPAS1,3374,true,MK6482,2025-06-03,,false
+FANCA,3582,true,EIK-1003,2025-06-03,,false
+FH,3700,false,,2025-06-03,Diagnostisk,false
+MAX,6913,false,,2025-06-03,ACMG SF v.3.2,false
+MDH2,6971,false,,2025-06-03,,false
+MEN1,7010,false,,2025-06-03,ACMG SF v.3.2,false
+MET,7029,false,,2025-06-03,,false
+MLH1,7127,false,,2025-06-03,ACMG SF v.3.2,true
+MLH3,7128,false,,2025-06-03,efter aftale med klinisk genetisk,false
+MRE11,7230,true,EIK-1003,2025-06-03,,false
+MSH2,7325,false,,2025-06-03,ACMG SF v.3.2,true
+MSH3,7326,false,,2025-06-03,CPI,false
+MSH6,7329,false,,2025-06-03,ACMG SF v.3.2,true
+MUTYH,7527,false,,2025-06-03,ACMG SF v.3.2,false
+NBN,7652,true,EIK-1003,2025-06-03,,false
+NF2,7773,false,,2025-06-03,ACMG SF v.3.2,false
+PALB2,26144,true,EIK-1003,2025-06-03,ACMG SF v.3.2,true
+PMS2,9122,false,,2025-06-03,ACMG SF v.3.2,true
+POLE,9177,false,,2025-06-03,CPI,true
+PTEN,9588,false,,2025-06-03,ACMG SF v.3.2,false
+RAD51B,9822,true,EIK-1003,2025-06-03,,false
+RAD51C,9820,true,EIK-1003,2025-06-03,,false
+RAD51D,9823,true,EIK-1003,2025-06-03,,false
+RB1,9884,false,,2025-06-03,ACMG SF v.3.2,false
+RET,9967,false,,2025-06-03,RETi + ACMG SF v.3.2,true
+SDHA,10680,true,MK6482,2025-06-03,,false
+SDHAF2,26034,true,MK6482,2025-06-03,ACMG SF v.3.2,false
+SDHB,10681,true,MK6482,2025-06-03,ACMG SF v.3.2,false
+SDHC,10682,true,MK6482,2025-06-03,ACMG SF v.3.2,false
+SDHD,10683,true,MK6482,2025-06-03,ACMG SF v.3.2,false
+SMAD4,6770,false,,2025-06-03,ACMG SF v.3.2,false
+STK11,11389,false,,2025-06-03,ACMG SF v.3.2,false
+TMEM127,26038,false,,2025-06-03,ACMG SF v.3.2,false
+TP53,11998,false,,2025-06-03,ACMG SF v.3.2,false
+VHL,12687,true,MK6482,2025-06-03,ACMG SF v.3.2,false
+WT1,12796,false,,2025-06-03,ACMG SF v.3.2,false
