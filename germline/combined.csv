@@ -1,104 +1,104 @@
 hugo_name,hgnc_id,protocol,protocol_specification,date_added,notes,behandlings_relevans,departments,total
-ATM,795,False,gm: EIK-1003,2025-06-03,,False,afmd;gm;moma;ouh;vejle,5/5
-BRCA1,1100,False,gm: ProTarget,2025-06-03,gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
-BRCA2,1101,False,gm: ProTarget,2025-06-03,gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
-MLH1,7127,False,,2025-06-03,gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
-MLH3,7128,False,,2025-06-03,gm: efter aftale med klinisk genetisk,False,afmd;gm;moma;ouh;vejle,5/5
-MSH2,7325,False,,2025-06-03,gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
-MSH3,7326,False,,2025-06-03,gm: CPI,False,afmd;gm;moma;ouh;vejle,5/5
-MSH6,7329,False,,2025-06-03,gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
-PALB2,26144,False,gm: EIK-1003,2025-06-03,gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
-PMS2,9122,False,,2025-06-03,gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
-RAD51C,9820,False,gm: EIK-1003,2025-06-03,,False,afmd;gm;moma;ouh;vejle,5/5
-RAD51D,9823,False,gm: EIK-1003,2025-06-03,,False,afmd;gm;moma;ouh;vejle,5/5
-CHEK2,16627,False,gm: EIK-1003,2025-06-03,,False,gm;moma;ouh;vejle,4/5
-EGLN1,1232,False,gm: MK6482,2025-06-03,,False,gm;moma;ouh;vejle,4/5
-EGLN2,14660,False,gm: MK6482,2025-06-03,,False,gm;moma;ouh;vejle,4/5
-ELOC,11617,False,gm: MK6482,2025-06-03,,False,gm;moma;ouh;vejle,4/5
-EPAS1,3374,False,gm: MK6482,2025-06-03,,False,gm;moma;ouh;vejle,4/5
-FH,3700,False,,2025-06-03,gm: Diagnostisk,False,gm;moma;ouh;vejle,4/5
-MDH2,6971,False,,2025-06-03,,False,gm;moma;ouh;vejle,4/5
-MET,7029,False,,2025-06-03,,False,gm;moma;ouh;vejle,4/5
-POLE,9177,False,,2025-06-03,gm: CPI,True,gm;moma;ouh;vejle,4/5
-RET,9967,False,,2025-06-03,gm: RETi + ACMG SF v.3.2,True,gm;moma;ouh;vejle,4/5
-SDHA,10680,False,gm: MK6482,2025-06-03,,False,gm;moma;ouh;vejle,4/5
-SDHAF2,26034,False,gm: MK6482,2025-06-03,gm: ACMG SF v.3.2,False,gm;moma;ouh;vejle,4/5
-SDHB,10681,False,gm: MK6482,2025-06-03,gm: ACMG SF v.3.2,False,gm;moma;ouh;vejle,4/5
-SDHC,10682,False,gm: MK6482,2025-06-03,gm: ACMG SF v.3.2,False,gm;moma;ouh;vejle,4/5
-SDHD,10683,False,gm: MK6482,2025-06-03,gm: ACMG SF v.3.2,False,gm;moma;ouh;vejle,4/5
-TP53,11998,False,,2025-06-03,gm: ACMG SF v.3.2,False,afmd;gm;ouh;vejle,4/5
-APC,583,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
-BARD1,952,False,,2025-03-06,,False,moma;ouh;vejle,3/5
-BMPR1A,1076,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
-BRIP1,20473,False,,2025-03-06,,False,moma;ouh;vejle,3/5
-EGFR,3236,False,,2025-03-06,,False,moma;ouh;vejle,3/5
-MBD4,6919,False,,2025-03-06,,False,moma;ouh;vejle,3/5
-MEN1,7010,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
-MUTYH,7527,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
-NF2,7773,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
-PIK3CA,8975,False,,2025-03-06,,False,moma;ouh;vejle,3/5
-PTEN,9588,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
-RB1,9884,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
-SMAD4,6770,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
-STK11,11389,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
-TERT,11730,False,,2025-03-06,,False,afmd;ouh;vejle,3/5
-VHL,12687,False,gm: MK6482,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
-WT1,12796,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
-ACD,25070,False,,2025-03-06,,False,ouh;vejle,2/5
-AKT1,391,False,,2025-03-06,,False,ouh;vejle,2/5
-AXIN2,904,False,,2025-03-06,,False,ouh;vejle,2/5
-BAP1,950,False,,2025-03-06,,False,ouh;vejle,2/5
-CDH1,1748,False,,2025-03-06,,False,ouh;vejle,2/5
-CDK4,1773,False,,2025-03-06,,False,ouh;vejle,2/5
-CDKN2A,1787,False,,2025-03-06,,False,ouh;vejle,2/5
-CDKN2B,1788,False,,2025-03-06,,False,ouh;vejle,2/5
-CTNNA1,2509,False,,2025-03-06,,False,ouh;vejle,2/5
-DICER1,17098,False,,2025-03-06,,False,ouh;vejle,2/5
-DPYD,3012,False,,2025-03-06,,False,ouh;vejle,2/5
-EPCAM,11529,False,,2025-03-06,,False,ouh;vejle,2/5
-FLCN,27310,False,,2025-03-06,,False,ouh;vejle,2/5
-GREM1,2001,False,,2025-03-06,,False,ouh;vejle,2/5
-HOXB13,5112,False,,2025-03-06,,False,ouh;vejle,2/5
-MITF,7105,False,,2025-03-06,,False,ouh;vejle,2/5
-MRE11,7230,False,gm: EIK-1003,2025-06-03,,False,gm;moma,2/5
-NBN,7652,False,gm: EIK-1003,2025-06-03,,False,gm;moma,2/5
-NF1,7765,False,,2025-03-06,,False,ouh;vejle,2/5
-NTHL1,8028,False,,2025-03-06,,False,ouh;vejle,2/5
-PMS1,9121,False,,2025-03-06,,False,afmd;moma,2/5
-POLD1,9175,False,,2025-03-06,,False,ouh;vejle,2/5
-POT1,17284,False,,2025-03-06,,False,ouh;vejle,2/5
-PTCH1,9585,False,,2025-03-06,,False,ouh;vejle,2/5
-PTCH2,9586,False,,2025-03-06,,False,ouh;vejle,2/5
-RNF43,18505,False,,2025-03-06,,False,ouh;vejle,2/5
-RPS20,10405,False,,2025-03-06,,False,ouh;vejle,2/5
-SEC23B,10702,False,,2025-03-06,,False,ouh;vejle,2/5
-SMARCA4,11100,False,,2025-03-06,,False,ouh;vejle,2/5
-SPRED1,20249,False,,2025-03-06,,False,ouh;vejle,2/5
-SUFU,16466,False,,2025-03-06,,False,ouh;vejle,2/5
-TERF2IP,19246,False,,2025-03-06,,False,ouh;vejle,2/5
-TSC1,12362,False,,2025-03-06,,False,ouh;vejle,2/5
-TSC2,12363,False,,2025-03-06,,False,ouh;vejle,2/5
+ATM,795,True,gm: EIK-1003; afmd: ?,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+BRCA1,1100,True,gm: ProTarget; afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+BRCA2,1101,True,gm: ProTarget; afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+MLH1,7127,False,afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+MLH3,7128,False,afmd: ?,2025-06-18,gm: efter aftale med klinisk genetisk; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+MSH2,7325,False,afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+MSH3,7326,False,afmd: ?,2025-06-18,gm: CPI; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+MSH6,7329,False,afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+PALB2,26144,True,gm: EIK-1003; afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+PMS2,9122,False,afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+RAD51C,9820,True,gm: EIK-1003; afmd: ?,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+RAD51D,9823,True,gm: EIK-1003; afmd: ?,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+CHEK2,16627,False,gm: EIK-1003,2025-06-18,,False,gm;moma;ouh;vejle,4/5
+EGLN1,1232,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,,False,gm;moma;ouh;vejle,4/5
+EGLN2,14660,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,,False,gm;moma;ouh;vejle,4/5
+ELOC,11617,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,,False,gm;moma;ouh;vejle,4/5
+EPAS1,3374,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,,False,gm;moma;ouh;vejle,4/5
+FH,3700,True,vejle: Belzutifan (OUH),2025-06-18,gm: Diagnostisk,False,gm;moma;ouh;vejle,4/5
+MDH2,6971,True,vejle: Belzutifan (OUH),2025-06-18,,False,gm;moma;ouh;vejle,4/5
+POLE,9177,False,,2025-06-18,gm: CPI,True,gm;moma;ouh;vejle,4/5
+RET,9967,False,,2025-06-18,gm: RETi + ACMG SF v.3.2,True,gm;moma;ouh;vejle,4/5
+SDHA,10680,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,,False,gm;moma;ouh;vejle,4/5
+SDHAF2,26034,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,gm: ACMG SF v.3.2,False,gm;moma;ouh;vejle,4/5
+SDHB,10681,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,gm: ACMG SF v.3.2,False,gm;moma;ouh;vejle,4/5
+SDHC,10682,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,gm: ACMG SF v.3.2,False,gm;moma;ouh;vejle,4/5
+SDHD,10683,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,gm: ACMG SF v.3.2,False,gm;moma;ouh;vejle,4/5
+TP53,11998,False,afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd;gm;ouh;vejle,4/5
+APC,583,False,,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
+BARD1,952,False,,2025-06-18,,False,moma;ouh;vejle,3/5
+BMPR1A,1076,False,,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
+BRIP1,20473,False,,2025-06-18,,False,moma;ouh;vejle,3/5
+EGFR,3236,False,,2025-06-18,vejle: Særligt exon 18-21,True,moma;ouh;vejle,3/5
+MET,7029,False,,2025-06-03,,False,gm;moma;ouh,3/5
+MRE11,7230,True,vejle: EIK-1003 ?; gm: EIK-1003,2025-06-18,,False,gm;moma;vejle,3/5
+MUTYH,7527,False,,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
+NBN,7652,True,vejle: EIK-1003 ?; gm: EIK-1003,2025-06-18,,False,gm;moma;vejle,3/5
+PTEN,9588,False,,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
+SMAD4,6770,False,,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
+STK11,11389,False,,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
+VHL,12687,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
+ATR,882,True,vejle: EIK-1003 ; gm: EIK-1003,2025-06-18,,False,gm;vejle,2/5
+AXIN2,904,False,,2025-06-18,,False,ouh;vejle,2/5
+CDK12,24224,True,vejle: EIK-1003 ; gm: EIK-1003,2025-06-18,,False,gm;vejle,2/5
+DICER1,17098,False,,2025-06-18,,False,ouh;vejle,2/5
+DPYD,3012,False,,2025-06-18,vejle: Kun 5 specifikke varianter,True,ouh;vejle,2/5
+EPCAM,11529,False,,2025-06-18,vejle: Deletioner (exon 8+9),True,ouh;vejle,2/5
+FANCA,3582,True,vejle: EIK-1003 ?; gm: EIK-1003,2025-06-18,,False,gm;vejle,2/5
+GREM1,2001,False,,2025-06-18,,False,ouh;vejle,2/5
+MBD4,6919,False,,2025-03-06,,False,moma;ouh,2/5
+MEN1,7010,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh,2/5
+NF2,7773,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh,2/5
+NTHL1,8028,False,,2025-06-18,,False,ouh;vejle,2/5
+PIK3CA,8975,False,,2025-03-06,,False,moma;ouh,2/5
+PMS1,9121,False,afmd: ?,2025-03-05,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd;moma,2/5
+POLD1,9175,False,,2025-06-18,,True,ouh;vejle,2/5
+RAD51B,9822,True,gm: EIK-1003,2025-06-18,,False,gm;vejle,2/5
+RB1,9884,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh,2/5
+RNF43,18505,False,,2025-06-18,,False,ouh;vejle,2/5
+RPS20,10405,False,,2025-06-18,,False,ouh;vejle,2/5
+TERT,11730,False,afmd: ?,2025-03-06,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd;ouh,2/5
+WT1,12796,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm;ouh,2/5
 ABRAXAS1,25829,False,,2025-03-05,,False,moma,1/5
+ACD,25070,False,,2025-03-06,,False,ouh,1/5
+AKT1,391,False,,2025-03-06,,False,ouh,1/5
 ALK,427,False,,2025-03-05,,False,moma,1/5
-ANKRD26,29186,False,,2025-03-06,,False,afmd,1/5
-ATR,882,True,gm: EIK-1003,2025-06-03,,False,gm,1/5
-CDK12,24224,True,gm: EIK-1003,2025-06-03,,False,gm,1/5
-CEBPA,1833,False,,2025-03-06,,False,afmd,1/5
+ANKRD26,29186,False,afmd: ?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
+BAP1,950,False,,2025-03-06,,False,ouh,1/5
+CDH1,1748,False,,2025-03-06,,False,ouh,1/5
+CDK4,1773,False,,2025-03-06,,False,ouh,1/5
+CDKN2A,1787,False,,2025-03-06,,False,ouh,1/5
+CDKN2B,1788,False,,2025-03-06,,False,ouh,1/5
+CEBPA,1833,False,afmd: ?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
 CHEK1,1925,False,,2025-03-05,,False,moma,1/5
-DDX41,18674,False,,2025-03-06,,False,afmd,1/5
-ETV6,3495,False,,2025-03-06,,False,afmd,1/5
-FANCA,3582,True,gm: EIK-1003,2025-06-03,,False,gm,1/5
+CTNNA1,2509,False,,2025-03-06,,False,ouh,1/5
+DDX41,18674,False,afmd: ?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
+ETV6,3495,False,afmd: ?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
 FGFR1,3688,False,,2025-03-05,,False,moma,1/5
 FGFR2,3689,False,,2025-03-05,,False,moma,1/5
 FGFR3,3690,False,,2025-03-05,,False,moma,1/5
 FGFR4,3691,False,,2025-03-05,,False,moma,1/5
-GATA3,4172,False,,2025-03-06,,False,afmd,1/5
+FLCN,27310,False,,2025-03-06,,False,ouh,1/5
+GATA3,4172,False,afmd: ?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
+HOXB13,5112,False,,2025-03-06,,False,ouh,1/5
 MAX,6913,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm,1/5
+MITF,7105,False,,2025-03-06,,False,ouh,1/5
+NF1,7765,False,,2025-03-06,,False,ouh,1/5
 NTRK1,8031,False,,2025-03-05,,False,moma,1/5
 NTRK2,8032,False,,2025-03-05,,False,moma,1/5
 NTRK3,8033,False,,2025-03-05,,False,moma,1/5
-RAD51B,9822,True,gm: EIK-1003,2025-06-03,,False,gm,1/5
+POT1,17284,False,,2025-03-06,,False,ouh,1/5
+PTCH1,9585,False,,2025-03-06,,False,ouh,1/5
+PTCH2,9586,False,,2025-03-06,,False,ouh,1/5
 ROS1,10261,False,,2025-03-05,,False,moma,1/5
-RUNX1,10471,False,,2025-03-06,,False,afmd,1/5
-TERC,11727,False,,2025-03-06,,False,afmd,1/5
+RUNX1,10471,False,afmd: ?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
+SEC23B,10702,False,,2025-03-06,,False,ouh,1/5
+SMARCA4,11100,False,,2025-03-06,,False,ouh,1/5
+SPRED1,20249,False,,2025-03-06,,False,ouh,1/5
+SUFU,16466,False,,2025-03-06,,False,ouh,1/5
+TERC,11727,False,afmd: ?,2021-04-07,afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd,1/5
+TERF2IP,19246,False,,2025-03-06,,False,ouh,1/5
 TMEM127,26038,False,,2025-06-03,gm: ACMG SF v.3.2,False,gm,1/5
+TSC1,12362,False,,2025-03-06,,False,ouh,1/5
+TSC2,12363,False,,2025-03-06,,False,ouh,1/5
