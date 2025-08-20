@@ -1,53 +1,53 @@
-hugo_name	hgnc_id	protocol	protocol_specification	date_added	notes	behandlings_relevans
-ATM	795	true		18-06-2025		true
-PALB2	26144	true		18-06-2025		true
-RAD51C	9820	true		18-06-2025		true
-RAD51D	9823	true		18-06-2025		true
-APC	583	false		18-06-2025		false
-ATR	882	true	EIK-1003 	18-06-2025		false
-AXIN2	904	false		18-06-2025		false
-BMPR1A	1076	false		18-06-2025		false
-BRCA1	1100	true		18-06-2025		true
-BRCA2	1101	true		18-06-2025		true
-CDK12	24224	true	EIK-1003 	18-06-2025		false
-DPYD	3012	false		18-06-2025	Kun 5 specifikke varianter	true
-EGFR	3236	false		18-06-2025	Særligt exon 18-21	true
-EGLN1	1232	true	Belzutifan (OUH)	18-06-2025		false
-EGLN2	14660	true	Belzutifan (OUH)	18-06-2025		false
-ELOC	11617	true	Belzutifan (OUH)	18-06-2025		false
-EPAS1	3374	true	Belzutifan (OUH)	18-06-2025		false
-EPCAM	11529	false		18-06-2025	Deletioner (exon 8+9)	true
-FANCA	3582	true	EIK-1003 ?	18-06-2025		false
-GREM1	2001	false		18-06-2025		false
-FH	3700	true	Belzutifan (OUH)	18-06-2025		false
-MDH2	6971	true	Belzutifan (OUH)	18-06-2025		false
-MLH1	7127	false		18-06-2025		true
-MLH3	7128	false		18-06-2025		true
-MSH2	7325	false		18-06-2025		true
-MSH3	7326	false		18-06-2025		true
-MSH6	7329	false		18-06-2025		true
-MUTYH	7527	false		18-06-2025		false
-MRE11	7230	true	EIK-1003 ?	18-06-2025		false
-NBN	7652	true	EIK-1003 ?	18-06-2025		false
-NTHL1	8028	false		18-06-2025		false
-PMS2	9122	false		18-06-2025		true
-POLD1	9175	false		18-06-2025		true
-POLE	9177	false		18-06-2025		true
-PTEN	9588	false		18-06-2025		false
-RAD51B	9822	true		18-06-2025		false
-RET	9967	false		18-06-2025		true
-RNF43	18505	false		18-06-2025		false
-SDHA	10680	true	Belzutifan (OUH)	18-06-2025		false
-SDHAF2	26034	true	Belzutifan (OUH)	18-06-2025		false
-SDHB	10681	true	Belzutifan (OUH)	18-06-2025		false
-SDHC	10682	true	Belzutifan (OUH)	18-06-2025		false
-SDHD	10683	true	Belzutifan (OUH)	18-06-2025		false
-SMAD4	6770	false		18-06-2025		false
-STK11	11389	false		18-06-2025		false
-RPS20	10405	false		18-06-2025		false
-TP53	11998	false		18-06-2025		false
-VHL	12687	true	Belzutifan (OUH)	18-06-2025		false
-BARD1	952	false				false
-BRIP1	20476	false				false
-CHEK2	16627	false				false
-DICER1	17098	false				false
+hugo_name,hgnc_id,protocol,protocol_specification,date_added,notes,behandlings_relevans
+ATM,795,true,,18-06-2025,,true
+PALB2,26144,true,,18-06-2025,,true
+RAD51C,9820,true,,18-06-2025,,true
+RAD51D,9823,true,,18-06-2025,,true
+APC,583,false,,18-06-2025,,false
+ATR,882,true,EIK-1003 ,18-06-2025,,false
+AXIN2,904,false,,18-06-2025,,false
+BMPR1A,1076,false,,18-06-2025,,false
+BRCA1,1100,true,,18-06-2025,,true
+BRCA2,1101,true,,18-06-2025,,true
+CDK12,24224,true,EIK-1003 ,18-06-2025,,false
+DPYD,3012,false,,18-06-2025,Kun 5 specifikke varianter,true
+EGFR,3236,false,,18-06-2025,Særligt exon 18-21,true
+EGLN1,1232,true,Belzutifan (OUH),18-06-2025,,false
+EGLN2,14660,true,Belzutifan (OUH),18-06-2025,,false
+ELOC,11617,true,Belzutifan (OUH),18-06-2025,,false
+EPAS1,3374,true,Belzutifan (OUH),18-06-2025,,false
+EPCAM,11529,false,,18-06-2025,Deletioner (exon 8+9),true
+FANCA,3582,true,EIK-1003 ?,18-06-2025,,false
+GREM1,2001,false,,18-06-2025,,false
+FH,3700,true,Belzutifan (OUH),18-06-2025,,false
+MDH2,6971,true,Belzutifan (OUH),18-06-2025,,false
+MLH1,7127,false,,18-06-2025,,true
+MLH3,7128,false,,18-06-2025,,true
+MSH2,7325,false,,18-06-2025,,true
+MSH3,7326,false,,18-06-2025,,true
+MSH6,7329,false,,18-06-2025,,true
+MUTYH,7527,false,,18-06-2025,,false
+MRE11,7230,true,EIK-1003 ?,18-06-2025,,false
+NBN,7652,true,EIK-1003 ?,18-06-2025,,false
+NTHL1,8028,false,,18-06-2025,,false
+PMS2,9122,false,,18-06-2025,,true
+POLD1,9175,false,,18-06-2025,,true
+POLE,9177,false,,18-06-2025,,true
+PTEN,9588,false,,18-06-2025,,false
+RAD51B,9822,true,,18-06-2025,,false
+RET,9967,false,,18-06-2025,,true
+RNF43,18505,false,,18-06-2025,,false
+SDHA,10680,true,Belzutifan (OUH),18-06-2025,,false
+SDHAF2,26034,true,Belzutifan (OUH),18-06-2025,,false
+SDHB,10681,true,Belzutifan (OUH),18-06-2025,,false
+SDHC,10682,true,Belzutifan (OUH),18-06-2025,,false
+SDHD,10683,true,Belzutifan (OUH),18-06-2025,,false
+SMAD4,6770,false,,18-06-2025,,false
+STK11,11389,false,,18-06-2025,,false
+RPS20,10405,false,,18-06-2025,,false
+TP53,11998,false,,18-06-2025,,false
+VHL,12687,true,Belzutifan (OUH),18-06-2025,,false
+BARD1,952,false,,,,false
+BRIP1,20476,false,,,,false
+CHEK2,16627,false,,,,false
+DICER1,17098,false,,,,false
