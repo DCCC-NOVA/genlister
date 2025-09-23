@@ -2,13 +2,13 @@ hugo_name,hgnc_id,protocol,protocol_specification,date_added,notes,behandlings_r
 ACD,25070,false,,2025-03-06,,false
 AKT1,391,false,,2025-03-06,,false
 APC,583,false,,2025-03-06,,false
-ATM,795,false,,2025-03-06,,false
+ATM,795,true,,2025-03-06,,false
 AXIN2,904,false,,2025-03-06,,false
 BAP1,950,false,,2025-03-06,,false
 BARD1,952,false,,2025-03-06,,false
 BMPR1A,1076,false,,2025-03-06,,false
-BRCA1,1100,false,,2025-03-06,,false
-BRCA2,1101,false,,2025-03-06,,false
+BRCA1,1100,true,,2025-03-06,,true
+BRCA2,1101,true,,2025-03-06,,true
 BRIP1,20473,false,,2025-03-06,,false
 CDH1,1748,false,,2025-03-06,,false
 CDK4,1773,false,,2025-03-06,,false
