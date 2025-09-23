@@ -2,7 +2,7 @@ hugo_name,hgnc_id,protocol,protocol_specification,date_added,notes,behandlings_r
 ACD,25070,false,,2025-03-06,,false
 AKT1,391,false,,2025-03-06,,false
 APC,583,false,,2025-03-06,,false
-ATM,795,false,,2025-03-06,,false
+ATM,795,true,,2025-03-06,,false
 AXIN2,904,false,,2025-03-06,,false
 BAP1,950,false,,2025-03-06,,false
 BARD1,952,false,,2025-03-06,,false
