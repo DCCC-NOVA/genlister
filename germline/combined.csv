@@ -1,16 +1,16 @@
 hugo_name,hgnc_id,protocol,protocol_specification,date_added,notes,behandlings_relevans,departments,total
-ATM,795,True,gm: EIK-1003; afmd: ?,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
-BRCA1,1100,True,gm: ProTarget; afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
-BRCA2,1101,True,gm: ProTarget; afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
-MLH1,7127,False,afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
-MLH3,7128,False,afmd: ?,2025-06-18,gm: efter aftale med klinisk genetisk; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
-MSH2,7325,False,afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
-MSH3,7326,False,afmd: ?,2025-06-18,gm: CPI; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
-MSH6,7329,False,afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
-PALB2,26144,True,gm: EIK-1003; afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
-PMS2,9122,False,afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
-RAD51C,9820,True,gm: EIK-1003; afmd: ?,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
-RAD51D,9823,True,gm: EIK-1003; afmd: ?,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+ATM,795,True,afmd: ?; gm: EIK-1003,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+BRCA1,1100,True,afmd: ?; gm: ProTarget,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi; gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
+BRCA2,1101,True,afmd: ?; gm: ProTarget,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi; gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
+MLH1,7127,False,afmd: ?,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi; gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
+MLH3,7128,False,afmd: ?,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi; gm: efter aftale med klinisk genetisk,True,afmd;gm;moma;ouh;vejle,5/5
+MSH2,7325,False,afmd: ?,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi; gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
+MSH3,7326,False,afmd: ?,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi; gm: CPI,True,afmd;gm;moma;ouh;vejle,5/5
+MSH6,7329,False,afmd: ?,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi; gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
+PALB2,26144,False,afmd: ?; gm: EIK-1003,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi; gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
+PMS2,9122,False,afmd: ?,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi; gm: ACMG SF v.3.2,True,afmd;gm;moma;ouh;vejle,5/5
+RAD51C,9820,False,afmd: ?; gm: EIK-1003,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
+RAD51D,9823,False,afmd: ?; gm: EIK-1003,2025-06-18,afmd: behandlingsrelevans skal opdateres: onkologi,True,afmd;gm;moma;ouh;vejle,5/5
 CHEK2,16627,False,gm: EIK-1003,2025-06-18,,False,gm;moma;ouh;vejle,4/5
 EGLN1,1232,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,,False,gm;moma;ouh;vejle,4/5
 EGLN2,14660,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,,False,gm;moma;ouh;vejle,4/5
@@ -25,20 +25,20 @@ SDHAF2,26034,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,gm: ACMG SF v.3
 SDHB,10681,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,gm: ACMG SF v.3.2,False,gm;moma;ouh;vejle,4/5
 SDHC,10682,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,gm: ACMG SF v.3.2,False,gm;moma;ouh;vejle,4/5
 SDHD,10683,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,gm: ACMG SF v.3.2,False,gm;moma;ouh;vejle,4/5
-TP53,11998,False,afmd: ?,2025-06-18,gm: ACMG SF v.3.2; afmd: behandlingsrelevans skal opdateres: hæmatologi,True,afmd;gm;ouh;vejle,4/5
+TP53,11998,False,afmd: ?,2025-06-18,afmd: behandlingsrelevans skal opdateres: hæmatologi; gm: ACMG SF v.3.2,True,afmd;gm;ouh;vejle,4/5
 APC,583,False,,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
 BARD1,952,False,,2025-06-18,,False,moma;ouh;vejle,3/5
 BMPR1A,1076,False,,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
 BRIP1,20473,False,,2025-06-18,,False,moma;ouh;vejle,3/5
 EGFR,3236,False,,2025-06-18,vejle: Særligt exon 18-21,True,moma;ouh;vejle,3/5
 MET,7029,False,,2025-06-03,,False,gm;moma;ouh,3/5
-MRE11,7230,True,vejle: EIK-1003 ?; gm: EIK-1003,2025-06-18,,False,gm;moma;vejle,3/5
+MRE11,7230,False,vejle: EIK-1003 ?; gm: EIK-1003,2025-06-18,,False,gm;moma;vejle,3/5
 MUTYH,7527,False,,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
-NBN,7652,True,vejle: EIK-1003 ?; gm: EIK-1003,2025-06-18,,False,gm;moma;vejle,3/5
+NBN,7652,False,vejle: EIK-1003 ?; gm: EIK-1003,2025-06-18,,False,gm;moma;vejle,3/5
 PTEN,9588,False,,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
 SMAD4,6770,False,,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
 STK11,11389,False,,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
-VHL,12687,True,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
+VHL,12687,False,vejle: Belzutifan (OUH); gm: MK6482,2025-06-18,gm: ACMG SF v.3.2,False,gm;ouh;vejle,3/5
 ATR,882,True,vejle: EIK-1003 ; gm: EIK-1003,2025-06-18,,False,gm;vejle,2/5
 AXIN2,904,False,,2025-06-18,,False,ouh;vejle,2/5
 CDK12,24224,True,vejle: EIK-1003 ; gm: EIK-1003,2025-06-18,,False,gm;vejle,2/5
@@ -89,6 +89,7 @@ NTRK1,8031,False,,2025-03-05,,False,moma,1/5
 NTRK2,8032,False,,2025-03-05,,False,moma,1/5
 NTRK3,8033,False,,2025-03-05,,False,moma,1/5
 POT1,17284,False,,2025-03-06,,False,ouh,1/5
+PRSS1,9475,False,,2026-03-06,,False,ouh,1/5
 PTCH1,9585,False,,2025-03-06,,False,ouh,1/5
 PTCH2,9586,False,,2025-03-06,,False,ouh,1/5
 ROS1,10261,False,,2025-03-05,,False,moma,1/5
