@@ -1,47 +1,41 @@
 hugo_name,hgnc_id,protocol,protocol_specification,date_added,notes,behandlings_relevans
-ABRAXAS1,25829,false,,2025-03-05,,false
-ALK,427,false,,2025-03-05,,false
-ATM,795,false,,2025-03-05,,false
-BARD1,952,false,,2025-03-05,,false
-BRCA1,1100,false,,2025-03-05,,false
-BRCA2,1101,false,,2025-03-05,,false
-BRIP1,20473,false,,2025-03-05,,false
-CHEK1,1925,false,,2025-03-05,,false
-CHEK2,16627,false,,2025-03-05,,false
-EGFR,3236,false,,2025-03-05,,false
-EGLN1,1232,false,,2025-03-05,,false
-EGLN2,14660,false,,2025-03-05,,false
-ELOC,11617,false,,2025-03-05,,false
-EPAS1,3374,false,,2025-03-05,,false
-FGFR1,3688,false,,2025-03-05,,false
-FGFR2,3689,false,,2025-03-05,,false
-FGFR3,3690,false,,2025-03-05,,false
-FGFR4,3691,false,,2025-03-05,,false
-FH,3700,false,,2025-03-05,,false
-MBD4,6919,false,,2025-03-05,,false
-MDH2,6971,false,,2025-03-05,,false
-MET,7029,false,,2025-03-05,,false
-MLH1,7127,false,,2025-03-05,,false
-MLH3,7128,false,,2025-03-05,,false
-MRE11,7230,false,,2025-03-05,,false
-MSH2,7325,false,,2025-03-05,,false
-MSH3,7326,false,,2025-03-05,,false
-MSH6,7329,false,,2025-03-05,,false
-NBN,7652,false,,2025-03-05,,false
-NTRK1,8031,false,,2025-03-05,,false
-NTRK2,8032,false,,2025-03-05,,false
-NTRK3,8033,false,,2025-03-05,,false
-PALB2,26144,false,,2025-03-05,,false
-PIK3CA,8975,false,,2025-03-05,,false
-PMS1,9121,false,,2025-03-05,,false
-PMS2,9122,false,,2025-03-05,,false
-POLE,9177,false,,2025-03-05,,false
-RAD51C,9820,false,,2025-03-05,,false
-RAD51D,9823,false,,2025-03-05,,false
-RET,9967,false,,2025-03-05,,false
-ROS1,10261,false,,2025-03-05,,false
-SDHA,10680,false,,2025-03-05,,false
-SDHAF2,26034,false,,2025-03-05,,false
-SDHB,10681,false,,2025-03-05,,false
-SDHC,10682,false,,2025-03-05,,false
-SDHD,10683,false,,2025-03-05,,false
+ABRAXAS1,25829,false,,2025-03-05,HRD signalvej,false
+ALK,427,false,,2025-03-05,ALK TKI'er,true
+ATM,795,true,EIK-1003,2025-03-05,,false
+ATR,882,true,EIK-1003,2025-11-10,,false
+BARD1,952,false,,2025-03-05,HRD signalvej,false
+BRCA1,1100,true,ProTarget,2025-03-05,ACMG SF v.3.2,true
+BRCA2,1101,true,ProTarget,2025-03-05,ACMG SF v.3.2,true
+BRIP1,20473,false,,2025-03-05,HRD signalvej,false
+CDK12,24224,true,EIK-1003,2025-11-10,,false
+CHEK2,16627,true,EIK-1003,2025-03-05,,false
+EGFR,3236,false,,2025-03-05,EGFR TKI'er,true
+EGLN1,1232,true,MK6482,2025-03-05,,false
+EGLN2,14660,true,MK6482,2025-03-05,,false
+ELOC,11617,true,MK6482,2025-03-05,,false
+EPAS1,3374,true,MK6482,2025-03-05,,false
+FANCA,3582,true,EIK-1003,2025-11-10,,false
+FGFR2,3689,false,,2025-03-05,FGFR-hæmmere,true
+MET,7029,false,,2025-03-05,MET hæmmere,true
+MLH1,7127,false,,2025-03-05,dMMR,true
+MLH3,7128,false,,2025-03-05,dMMR,true
+MRE11,7230,true,EIK-1003,2025-03-05,,false
+MSH2,7325,false,,2025-03-05,dMMR,true
+MSH3,7326,false,,2025-03-05,dMMR,true
+MSH6,7329,false,,2025-03-05,dMMR,true
+NBN,7652,true,EIK-1003,2025-03-05,,false
+PALB2,26144,true,EIK-1003,2025-03-05,,false
+PMS1,9121,false,,2025-03-05,dMMR,true
+PMS2,9122,false,,2025-03-05,dMMR,true
+POLE,9177,false,,2025-03-05,dMMR,true
+RAD51B,9822,true,EIK-1003,2025-11-10,,false
+RAD51C,9820,true,EIK-1003,2025-03-05,,false
+RAD51D,9823,true,EIK-1003,2025-03-05,,false
+RET,9967,false,,2025-03-05,RET hæmmere,true
+ROS1,10261,false,,2025-03-05,ROS TKI'er,false
+SDHA,10680,true,MK6482,2025-03-05,,false
+SDHAF2,26034,true,MK6482,2025-03-05,,false
+SDHB,10681,true,MK6482,2025-03-05,,false
+SDHC,10682,true,MK6482,2025-03-05,,false
+SDHD,10683,true,MK6482,2025-03-05,,false
+VHL,12687,true,MK6482,2025-11-10,ACMG SF v.3.2,false
