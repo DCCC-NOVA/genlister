@@ -73,6 +73,7 @@ class CombinedCSV(CSVBase):
             return
 
         self.date_added: datetime.date = max((self.date_added, row.date_added))
+        self.protocol = self.protocol or row.protocol
         if row.notes:
             if self.notes:
                 self.notes += f"; {department}: {row.notes}"
