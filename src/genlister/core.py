@@ -1,9 +1,9 @@
 import datetime
 from collections.abc import Sequence
 from enum import Enum
-from typing import override
+from typing import ClassVar, get_args, get_origin, override
 
-from pydantic import BaseModel, field_validator
+from pydantic import BaseModel, field_validator, model_validator
 
 
 class TypeOfListEnum(Enum):
@@ -20,6 +20,76 @@ class GainLossBothEnum(Enum):
     UNKNOWN = "unknown"
 
 
+class MekanismeEnum(Enum):
+    """Mekanisme for genet. Værdierne er forkortelserne fra fusion/README.md."""
+
+    A = "A"
+    AEL = "AEL"
+    AL = "AL"
+    ALCL = "ALCL"
+    ALL = "ALL"
+    AML = "AML"
+    AML_STAR = "AML*"
+    APL = "APL"
+    B_ALL = "B-ALL"
+    B_CLL = "B-CLL"
+    B_NHL = "B-NHL"
+    CLL = "CLL"
+    CML = "CML"
+    CMML = "CMML"
+    CNS = "CNS"
+    D = "D"
+    DFSP = "DFSP"
+    DLBL = "DLBL"
+    DLCL = "DLCL"
+    DOM = "Dom"
+    E = "E"
+    F = "F"
+    GIST = "GIST"
+    JMML = "JMML"
+    L = "L"
+    M = "M"
+    MALT = "MALT"
+    MDS = "MDS"
+    MIS = "Mis"
+    MLCLS = "MLCLS"
+    MM = "MM"
+    MPD = "MPD"
+    N = "N"
+    NHL = "NHL"
+    NK_T = "NK/T"
+    NSCLC = "NSCLC"
+    O = "O"
+    PMBL = "PMBL"
+    PRE_B_ALL = "pre-B ALL"
+    REC = "Rec"
+    S = "S"
+    T = "T"
+    T_ALL = "T-ALL"
+    T_CLL = "T-CLL"
+    TGCT = "TGCT"
+    T_PLL = "T-PLL"
+    FUS = "Fus"
+    MUT = "Mut"
+    INDEL = "Indel"
+    KDD = "KDD"
+    CNA = "CNA"
+    EKSPRESSION = "Ekspression"
+    TRUNKERING = "Trunkering"
+    REARRANGEMENT = "Rearrangement"
+
+
+class FunktionAfGenetEnum(Enum):
+    """Funktion af genet."""
+
+    ONKOGEN = "onkogen"
+    TUMORSUPPRESSOR = "tumorsuppressor"
+    UKENDT = "ukendt"
+    ONKOGEN_ELLER_TS = "onkogen eller tumorsuppressor"
+    ONKOGEN_ELLER_UKENDT = "onkogen eller ukendt"
+    INGEN_EVIDENS = "ingen evidens"
+
+
 class CSVBase(BaseModel):
     hugo_name: str
     hgnc_id: int
@@ -27,6 +97,8 @@ class CSVBase(BaseModel):
     protocol_specification: str | None
     date_added: datetime.date
     notes: str | None
+
+    notes_last: ClassVar[bool] = False
 
     @field_validator("hugo_name")
     def clean_name(cls, value: str) -> str:
@@ -39,6 +111,27 @@ class CSVBase(BaseModel):
         if value <= 0:
             raise ValueError(f"HGNC must be greater than 0: '{value}'")
         return value
+
+    @model_validator(mode="before")
+    @classmethod
+    def split_semicolon_lists(cls, data: object) -> object:
+        """Splits ';'-joined CSV strings into lists for list-annotated fields."""
+        if not isinstance(data, dict):
+            return data
+        for name, field in cls.model_fields.items():
+            value = data.get(name)
+            if not isinstance(value, str):
+                continue
+            args = get_args(field.annotation)
+            if get_origin(field.annotation) is list or any(
+                get_origin(arg) is list for arg in args
+            ):
+                data[name] = (
+                    None
+                    if value == ""
+                    else [v.strip() for v in value.split(";") if v.strip()]
+                )
+        return data
 
     @override
     def __hash__(self) -> int:
@@ -97,12 +190,16 @@ class CombinedCSV(CSVBase):
                 setattr(self, col, getattr(row, col) or getattr(self, col))
 
     @classmethod
+    def ordered_gene_fields(cls) -> Sequence[str]:
+        cols = [*cls.defaults(), *cls.type_specific_set()]
+        if cls.notes_last:
+            cols.remove("notes")
+            cols.append("notes")
+        return tuple(cols)
+
+    @classmethod
     def csv_header(cls) -> str:
-        return ",".join(
-            tuple(cls.defaults())
-            + tuple(cls.type_specific_set())
-            + ("departments", "total")
-        )
+        return ",".join((*cls.ordered_gene_fields(), "departments", "total"))
 
     @staticmethod
     def defaults() -> Sequence[str]:
@@ -110,21 +207,27 @@ class CombinedCSV(CSVBase):
 
     @classmethod
     def type_specific_set(cls) -> Sequence[str]:
-        return tuple(
-            set(cls.model_fields.keys())
-            - set(CombinedCSV.defaults())
-            - set(("departments", "total"))
-        )
+        excluded = set(CombinedCSV.defaults()) | {"departments", "total"}
+        return tuple(name for name in cls.model_fields if name not in excluded)
 
     @override
     def __str__(self) -> str:
         res = ""
-        for name in self.defaults():
+        for name in self.ordered_gene_fields():
             value = getattr(self, name)
-            res += f"{value},"
-        for name in self.type_specific_set():
-            value = getattr(self, name)
-            res += f"{value},"
+            if value is None:
+                res += ","
+            elif isinstance(value, list):
+                res += (
+                    ";".join(
+                        str(v.value) if isinstance(v, Enum) else str(v) for v in value
+                    )
+                    + ","
+                )
+            elif isinstance(value, Enum):
+                res += f"{value.value},"
+            else:
+                res += f"{value},"
 
         res += f"{';'.join(sorted(self.departments))},"
         res += f"{len(self.departments)}/{self.total}"
@@ -140,7 +243,20 @@ class SNVCombined(SNV, CombinedCSV):
 
 
 class Fusion(CSVBase):
-    pass
+    notes_last: ClassVar[bool] = True
+
+    behandlings_relevans: bool
+    diagnostisk: bool
+    prognostisk: bool
+    funktion_af_genet: FunktionAfGenetEnum | None = None
+    mekanisme: list[MekanismeEnum] | None = None
+
+    @field_validator("funktion_af_genet", mode="before")
+    @classmethod
+    def empty_string_is_none(cls, value: object) -> object:
+        if value == "":
+            return None
+        return value
 
 
 class FusionCombined(Fusion, CombinedCSV):

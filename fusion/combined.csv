@@ -1,92 +1,98 @@
-hugo_name,hgnc_id,protocol,protocol_specification,date_added,notes,departments,total
-ABCB1,40,False,,2026-03-05,,moma,1/5
-ABL1,76,False,,2026-03-05,,moma,1/5
-AKT2,392,False,,2026-03-05,,moma,1/5
-AKT3,393,False,,2026-03-05,,moma,1/5
-ALK,427,False,,2026-03-05,,moma,1/5
-BCL2,990,False,,2026-03-05,,moma,1/5
-BCOR,20893,False,,2026-03-05,,moma,1/5
-BRAF,1097,False,,2026-03-05,,moma,1/5
-BRD4,13575,False,,2026-03-05,,moma,1/5
-CIC,14214,False,,2026-03-05,,moma,1/5
-CREBBP,2348,False,,2026-03-05,,moma,1/5
-CSF1,2432,False,,2026-03-05,,moma,1/5
-EGFR,3236,False,,2026-03-05,,moma,1/5
-ERBB2,3430,False,,2026-03-05,,moma,1/5
-ERG,3446,False,,2026-03-05,,moma,1/5
-ESR1,3467,False,,2026-03-05,,moma,1/5
-ETV1,3490,False,,2026-03-05,,moma,1/5
-ETV4,3493,False,,2026-03-05,,moma,1/5
-EWSR1,3508,False,,2026-03-05,,moma,1/5
-FGFR1,3688,False,,2026-03-05,,moma,1/5
-FGFR2,3689,False,,2026-03-05,,moma,1/5
-FGFR3,3690,False,,2026-03-05,,moma,1/5
-FGFR4,3691,False,,2026-03-05,,moma,1/5
-FOS,3796,False,,2026-03-05,,moma,1/5
-FOSB,3797,False,,2026-03-05,,moma,1/5
-FOXR1,29980,False,,2026-03-05,,moma,1/5
-FOXR2,30469,False,,2026-03-05,,moma,1/5
-FUS,4010,False,,2026-03-05,,moma,1/5
-FYN,4037,False,,2026-03-05,,moma,1/5
-GLI1,4317,False,,2026-03-05,,moma,1/5
-IRF4,6119,False,,2026-03-05,,moma,1/5
-JAK2,6192,False,,2026-03-05,,moma,1/5
-JAZF1,28917,False,,2026-03-05,,moma,1/5
-KIT,6342,False,,2026-03-05,,moma,1/5
-KMT2E,18541,False,,2026-03-05,,moma,1/5
-KRAS,6407,False,,2026-03-05,,moma,1/5
-LATS1,6514,False,,2026-03-05,,moma,1/5
-MAML2,16259,False,,2026-03-05,,moma,1/5
-MAP3K3,6855,False,,2026-03-05,,moma,1/5
-MAP3K8,6860,False,,2026-03-05,,moma,1/5
-MET,7029,False,,2026-03-05,,moma,1/5
-MN1,7180,False,,2026-03-05,,moma,1/5
-MRTFB,29819,False,,2026-03-05,,moma,1/5
-MYB,7545,False,,2026-03-05,,moma,1/5
-MYBL1,7547,False,,2026-03-05,,moma,1/5
-NAB2,7627,False,,2026-03-05,,moma,1/5
-NCOA1,7668,False,,2026-03-05,,moma,1/5
-NCOA2,7669,False,,2026-03-05,,moma,1/5
-NCOR2,7673,False,,2026-03-05,,moma,1/5
-NOTCH1,7881,False,,2026-03-05,,moma,1/5
-NOTCH2,7882,False,,2026-03-05,,moma,1/5
-NPM1,7910,False,,2026-03-05,,moma,1/5
-NR4A3,7982,False,,2026-03-05,,moma,1/5
-NRG1,7997,False,,2026-03-05,,moma,1/5
-NTRK1,8031,False,,2026-03-05,,moma,1/5
-NTRK2,8032,False,,2026-03-05,,moma,1/5
-NTRK3,8033,False,,2026-03-05,,moma,1/5
-NUTM1,29919,False,,2026-03-05,,moma,1/5
-PAX3,8617,False,,2026-03-05,,moma,1/5
-PAX5,8619,False,,2026-03-05,,moma,1/5
-PAX7,8621,False,,2026-03-05,,moma,1/5
-PAX8,8622,False,,2026-03-05,,moma,1/5
-PDGFB,8800,False,,2026-03-05,,moma,1/5
-PDGFRA,8803,False,,2026-03-05,,moma,1/5
-PDGFRB,8804,False,,2026-03-05,,moma,1/5
-PHF1,8919,False,,2026-03-05,,moma,1/5
-PLAG1,9045,False,,2026-03-05,,moma,1/5
-PPARG,9236,False,,2026-03-05,,moma,1/5
-PRKACA,9380,False,,2026-03-05,,moma,1/5
-PRKCA,9393,False,,2026-03-05,,moma,1/5
-PTEN,9588,False,,2026-03-05,,moma,1/5
-RAF1,9829,False,,2026-03-05,,moma,1/5
-RARA,9864,False,,2026-03-05,,moma,1/5
-RASGRF1,9875,False,,2026-03-05,,moma,1/5
-RASGRF2,9876,False,,2026-03-05,,moma,1/5
-RELA,9955,False,,2026-03-05,,moma,1/5
-RET,9967,False,,2026-03-05,,moma,1/5
-ROS1,10261,False,,2026-03-05,,moma,1/5
-RSPO2,28583,False,,2026-03-05,,moma,1/5
-RSPO3,20866,False,,2026-03-05,,moma,1/5
-SMARCA2,11098,False,,2026-03-05,,moma,1/5
-SS18,11340,False,,2026-03-05,,moma,1/5
-SSX1,11335,False,,2026-03-05,,moma,1/5
-SSX2,11336,False,,2026-03-05,,moma,1/5
-STAT6,11368,False,,2026-03-05,,moma,1/5
-TAF15,11547,False,,2026-03-05,,moma,1/5
-TFE3,11752,False,,2026-03-05,,moma,1/5
-TMPRSS2,11876,False,,2026-03-05,,moma,1/5
-WWTR1,24042,False,,2026-03-05,,moma,1/5
-YAP1,16262,False,,2026-03-05,,moma,1/5
-YWHAE,12851,False,,2026-03-05,,moma,1/5
+hugo_name,hgnc_id,protocol,protocol_specification,date_added,behandlings_relevans,diagnostisk,prognostisk,funktion_af_genet,mekanisme,notes,departments,total
+ABCB1,40,False,,2026-03-05,False,False,False,onkogen,Fus;A,moma: Resistensmarkør i brystcancer. Upregulation of ABCB1 through locus amplification represents a novel; conserved mechanism of PDAC paclitaxel resistance https://link.springer.com/article/10.1186/s13046-023-02879-8,moma,1/5
+ABL1,76,False,,2026-03-05,True,True,True,onkogen,T;Mis;Mut;Fus,moma: Typisk for leukaemier (BCR-ABL1),moma,1/5
+AKT1,391,False,,2026-10-29,True,False,False,onkogen,Mis;Fus;A,moma: key driver,moma,1/5
+AKT2,392,False,,2026-03-05,True,False,False,onkogen,A;Mut;Fus,moma: key driver,moma,1/5
+AKT3,393,False,,2026-03-05,True,False,False,onkogen,A;Mut;Fus,moma: key driver,moma,1/5
+ALK,427,False,,2026-03-05,True,True,False,onkogen,T;Mis;A;Fus,moma: ALK TKI'er,moma,1/5
+BCL2,990,False,,2026-03-05,True,True,False,onkogen,T;Fus;Mis,moma: amplifikationer er observeret og måske resistensmekanisme? BCL2 is found to be translocated and overexpressed particularly in haematological malignancies; but is infrequently mutated (PMID: 3262202; 16193090). IGH-BCL2 fusioner. Amplifikationer ses i lymfomer: https://doi.org/10.1038/s41408-020-00382-3,moma,1/5
+BCOR,20893,False,,2026-03-05,True,True,False,tumorsuppressor,F;N;S;T;A;Mut;Fus;D,moma: BCOR mut diag. i bla. CML (onkokb).Disse fusioner er forbundet med sjældne tumorer og kan involvere partnergener som MAML3; ZC3H7B eller EP300. Diagnostisk - forblive på,moma,1/5
+BRAF,1097,False,,2026-03-05,True,True,False,onkogen,Mis;T;O;A;Mut;Fus,,moma,1/5
+BRD4,13575,False,,2026-03-05,False,False,False,onkogen,T;A;Fus,moma: fusioner til NUTM1 og NOTCH3 (NOTCH3 er ikke på listen; fusion ukendt funktion). BRD4 inhibitorer på vej.,moma,1/5
+CIC,14214,False,,2026-03-05,True,True,False,tumorsuppressor,Mis;F;S;T;A;Mut;Fus;D,moma: set in-house til en speciel gruppe af hjernetumorer; og CIC-DUX4 fusion. Diagnostisk I oligodendrogliom,moma,1/5
+CREBBP,2348,False,,2026-03-05,True,True,False,tumorsuppressor,T;N;F;Mis;O;A;Mut;Fus;D,moma: KATA6-CREBBP fusion i AML; myst3-crebbp i infant aml; bcor. KATA6 er ikke pÃ¥ listen. Vigtigt at den forbliver på listen I forhold til struturellevarianter og evt. Fusioner. Trials,moma,1/5
+CSF1,2432,False,,2026-03-05,False,False,False,ukendt,Fus,moma: occurs in certain tumors; most commonly tenosynovial giant cell tumors (TGCT); where the CSF1 (Colony Stimulating Factor 1) gene fuses with another gene; Because CSF1 signaling is crucial for tumor growth; therapies targeting the CSF1 receptor (CSF1R) are effective in treating some of these tumors. For example; CSF1R inhibitors like vimseltinib have shown promising results.,moma,1/5
+EGFR,3236,False,,2026-03-05,True,False,False,onkogen,A;O;Mis;Mut;Fus;D;KDD,moma: EGFR TKI'er,moma,1/5
+ERBB2,3430,False,,2026-03-05,True,True,True,onkogen,A;Mis;O;T;Mut;Fus;Indel;Ekspression,moma: forblive på fusionslisten da tidligere små varianter (kaldt som fusion) er identificeret og kan indgå i behandling,moma,1/5
+ERBB4,3432,False,,2026-10-29,True,False,False,ukendt,Mis;N;Fus,moma: kendt fusion: EZR-ERBB4 Fusion akt.,moma,1/5
+ERG,3446,False,,2026-03-05,False,False,False,onkogen,T;A;Fus,moma: fusioneret til TMPRSS2; FUS; EWSR1. Bibeholdes,moma,1/5
+ESR1,3467,False,,2026-03-05,True,True,True,onkogen,Mis;T;A;Mut;Fus,,moma,1/5
+ETV1,3490,False,,2026-03-05,False,False,False,onkogen,T;Fus,moma: fusionerer til ewsrq. Tmprss2; men også andre. ETV1 sandsynligvis den onkogeniske del. https://pmc.ncbi.nlm.nih.gov/articles/PMC3689235/,moma,1/5
+ETV4,3493,False,,2026-03-05,False,False,False,onkogen,T;Fus,moma: https://pmc.ncbi.nlm.nih.gov/articles/PMC3689235/,moma,1/5
+EWSR1,3508,False,,2026-03-05,True,False,False,onkogen,T;Mut;Fus,moma: Diagnostisk fusion i ewing sarkom; fusionerer til bl.a. fli1; erg; wt1; atf1. EWSR1 er driveren,moma,1/5
+FGFR1,3688,False,,2026-03-05,True,True,False,onkogen,T;A;Mis;Fus;KDD,,moma,1/5
+FGFR2,3689,False,,2026-03-05,True,False,False,onkogen,Mis;T;A;Mut;Fus;Indel;D;Trunkering,moma: FGFR-inhibitorer,moma,1/5
+FGFR3,3690,False,,2026-03-05,True,True,True,onkogen,Mis;T;A;Mut;Fus,,moma,1/5
+FGFR4,3691,False,,2026-03-05,True,False,False,onkogen,Mis;A;Mut;Fus,moma: FGFR4 FusionÂ is an inclusion criterion in 8 clinical trials for acute lymphoblastic leukemia; of which 7 are open and 1 is closed. Flere kliniske forsøg fx NCT06915753,moma,1/5
+FOS,3796,False,,2026-03-05,False,False,False,onkogen,Fus,moma: osteosarkom; https://www.nature.com/articles/s41467-018-04530-z,moma,1/5
+FOSB,3797,False,,2026-03-05,False,False,False,onkogen,Fus,moma: osteosarkom; https://www.nature.com/articles/s41467-018-04530-z,moma,1/5
+FOXR1,29980,False,,2026-03-05,False,False,False,ukendt,T;Fus,moma: neuroblastom. Kom på fra børnelægerne i tidernes morgen. Skal forblive på,moma,1/5
+FOXR2,30469,False,,2026-03-05,False,False,False,ukendt,Fus,moma: neuroblastom. Kom på fra børnelægerne i tidernes morgen. Skal forblive på,moma,1/5
+FUS,4010,False,,2026-03-05,False,False,False,ukendt,T;A;Fus,moma: fusionerer til erg. Creb3l2; chop; crem; ddit3; etc. skal forblive på actionable I forhold til struktrelle varianter som kan give ophave til fusioner,moma,1/5
+FYN,4037,False,,2026-03-05,False,False,False,onkogen,Mut;Fus,moma: FYN activity is associated with the activation of oncogenic signaling in tumor cells including the EGFR pathway in glioblastomas and the FLT3 pathway in leukemias (PMID: 19690143; 26848862; 24882577; 19567819). Activating FYN mutations have been identified in peripheral T-cell lymphomas and cholangiocarcinomas; suggesting that FYN acts as an oncogene (PMID: 24413734; 26437031; 25526346). Kinase inhibitors targeting FYN are in development (PMID: 26493492; 24976598; 21813412).FYN-TRAF3IP2: This recurrent fusion is found in peripheral T-cell lymphomas and leads to chronic activation of the NF-κB signaling pathway. COL1A1-FYN: This fusion has been identified in epithelioid osteoblastomas,moma,1/5
+GLI1,4317,False,,2026-03-05,False,False,False,onkogen,T;F;Fus,moma: GLI1 fusions involving ACTB; MALAT1; and PTCH1 genes have been recently reported in a subset of malignant soft tissue tumors with characteristic monomorphic nested epithelioid morphology and frequent S100 positivity.https://www.sciencedirect.com/science/article/pii/S0893395222009851,moma,1/5
+IRF4,6119,False,,2026-03-05,False,False,False,ukendt,T,moma: B-cell lymfom og andre lymfomer,moma,1/5
+JAK2,6192,False,,2026-03-05,True,True,True,onkogen,T;Mis;O;A;Fus,moma: Myeloid/Lymphoid Neoplasms with Eosinophilia and Rearrangement of PDGFRA/PDGFRB or FGFR1 or with PCM1-JAK2,moma,1/5
+JAZF1,28917,False,,2026-03-05,False,False,False,onkogen,T;Fus,moma: altered through chromosomal rearrangement in endometrial stromal sarcomas; and the JAZF1-SUZ12 fusion has been identified as the cytogenetic hallmark of this disease (PMID: 26879382; 35649353; 34928964). + andre i endrometrial stromal sarkom med JAZF1,moma,1/5
+KIT,6342,False,,2026-03-05,True,True,True,onkogen,Mis;O;A;Mut,moma: kit fusioner har været inklusionskriterie i klinisk forsøg bl.a. https://www.mycancergenome.org/content/clinical_trials/NCT02071940/,moma,1/5
+KMT2A,7132,False,,2026-10-29,True,False,False,ukendt,T;O;D;Trunkering;Mut;Fus,moma: MLL1; dual function (blood/solid cancer),moma,1/5
+KMT2E,18541,False,,2026-03-05,False,False,False,ukendt,Fus,moma: KMT2E-ASNS: a novel relapse-specific fusion gene in early T-cell precursor acute lymphoblastic leukemia.Obs. kan spille en rolle som TS/onkogen i APL/AML respektivt: https://ashpublications.org/blood/article/132/Supplement%201/3838/265167/KMT2E-Mediated-Epigenetic-Reprogramming-Promotes,moma,1/5
+KRAS,6407,False,,2026-03-05,True,True,True,onkogen,Mis;A;Mut,moma: mener den kom på i starten hvor der var set prostata patienter med KRAS fusion. Jvf RASGRF1/2 snak om aktivering og protokol bør den måske forblive på selvom det ikke er fusioner man generelt ser i dette gen.,moma,1/5
+LATS1,6514,False,,2026-03-05,True,False,False,tumorsuppressor,Mis;N;A;Mut;D;Trunkering;Ekspression,moma: hipposignalering; enkelte fusioner hvor det vigtige er at lats1 bliver ødelagt (stadig på actionablelisten). LATS1-PSEN1 i mesiotheliom. Ikke clearcut relevant som fusion. NCT05873686; mut. NCT06725758(del; trunkering). CNV + ekspression i TEADCO,moma,1/5
+MAML2,16259,False,,2026-03-05,False,False,False,ingen evidens,T,moma: MAML2 is frequently altered in various cancers through chromosomal translocation; with driver genes fusing with the C-terminal activation domain of MAML2. MAML2 is recurrently altered through chromosomal rearrangement with the genes CRTC1 and YAP1; forming the fusions MAML2-CRTC1 and MAML2-YAP1 (PMID: 33830080; 31145701).mucoepidermoid carcinoma; and the CRTC1-MAML2 fusion has been identified as a key driver in this disease. YAP1 på listen. Diagnostisk,moma,1/5
+MAP3K3,6855,False,,2026-03-05,False,False,False,ukendt,Fus,moma: MAP3K3 fusions has been identified in atypical Spitzoid tumor og multicystic mesothelioma - fÃ¥ studier nok evidens til at beholde pÃ¥ listen?,moma,1/5
+MAP3K8,6860,False,,2026-03-05,False,False,False,ukendt,Rearrangement;Trunkering;Fus,moma: while MAP3K8 fusions are common in spitzoid melanoma (PMID: 30833747; PMID: 31719662; PMID: 31498175).GoogleAI: MAP3K8 deletions are exceedingly rare; instead; oncogenic fusions or truncations that over-activate the gene are common in specific melanomas and drive resistance to certain therapies. MAP3K8 exhibits a reliable predictive value for the effectiveness of MEK inhibitor treatment. doi: 10.1038/ncomms9583: Our data highlight key roles for MAP3K8 in HGSC and indicate that MEK inhibitors could be a useful treatment strategy; in combination with conventional chemotherapy; for this disease.,moma,1/5
+MET,7029,False,,2026-03-05,True,False,False,onkogen,Mis;Fus;A,moma: MET-inhibitorer; velbeskrevet. NCT04116541 (amplifikation; mut.),moma,1/5
+MGMT,7059,False,,2026-10-29,False,False,False,tumorsuppressor,D,moma: MGMT promoter methylation and loss of MGMT expression has been identified in various tumor types; including lymphoma; glioma; colorectal; non-small cell lung; and head and neck carcinoma (PMID: 26035292; PMID: 10029064; PMID: 19846906). Mange studier på hypermethylering. Prækliniske studier viser resistens af MGMT fusioner mod temozolomide.,moma,1/5
+MN1,7180,False,,2026-03-05,False,False,True,onkogen,T;Fus;A,moma: hallmark of specific central nervous system (CNS) tumors called astroblastomas; and they are also found in some soft tissue sarcomas and leukemias. Some common fusion partners include BEND2; CXXC5; and ETV6. MN1; a transcriptional coregulator; is altered by amplification and chromosomal translocation in acute myeloid leukemia. Amplification of MN1 and chromosomal translocations have been identified in acute myeloid leukemia; and are associated with poor patient prognosis (PMID: 35483876; 28440611; 28892045; 33974912). Preclinical studies suggest that MN1 overexpression may confer resistance to all-trans retinoic acid (ATRA) treatment and chemotherapy in the context of acute myeloid leukemia (PMID: 17494859; 22905229).,moma,1/5
+MRTFB,29819,False,,2026-03-05,False,False,False,ukendt,Fus,moma: RREB1-MRTFB has been identified in mesenchymal tumors involving the mediastinum (PMID: 31991003); ectomesenchymal chondromyxoid tumors (PMID: 29912715); and oropharyngeal monomorphic spindle cell sarcoma (PMID: 29266774); Umiddelbart ikke relevant; meget lidt info,moma,1/5
+MYB,7545,False,,2026-03-05,True,False,False,onkogen,T;A;Fus,moma: Diagnostisk.Protokol til MYB-NFIB; MYB-QKI. MYB-TYK2 has been identified in Philadelphia chromosome-like acute lymphoblastic leukemia (PMID: 25207766).Recurrent Fusions in MYB and MYBL1 Define a Common; Transcription Factor-Driven Oncogenic Pathway in Salivary Gland Adenoid Cystic Carcinoma. Amp likely oncogenic i Oncokb. The C-terminal region of MYB contains a negative regulatory domain and mutations or deletion of this region can promote cellular transformation (PMID: 2670562).,moma,1/5
+MYBL1,7547,False,,2026-03-05,False,False,False,onkogen,Fus,moma: Diagnostisk. Recurrent Fusions in MYB and MYBL1 Define a Common; Transcription Factor-Driven Oncogenic Pathway in Salivary Gland Adenoid Cystic Carcinoma,moma,1/5
+NAB2,7627,False,,2026-03-05,False,False,False,onkogen eller tumorsuppressor,T,moma: NAB2-STAT6 fusions are recurrent in solitary fibrous tumor (PMID: 23313954; PMID: 23313952).,moma,1/5
+NCOA1,7668,False,,2026-03-05,False,False,False,ukendt,T,moma: mange partnere; fusioner ukendt funktion. PAX3-NCOA1=GOF i jax. PAX3 på listen. Our results expand the clinicopathologic spectrum of sarcomas with MEIS1-NCOA2/1 fusions; providing evidence of an undifferentiated spindle cell phenotype with nonspecific immunoprofile and low-grade clinical behavior. Upcomming onkogen fusion? https://www.sciencedirect.com/science/article/pii/S0893395222006093,moma,1/5
+NCOA2,7669,False,,2026-03-05,False,False,False,onkogen,T,moma: mange partnere. Our results expand the clinicopathologic spectrum of sarcomas with MEIS1-NCOA2/1 fusions; providing evidence of an undifferentiated spindle cell phenotype with nonspecific immunoprofile and low-grade clinical behavior. Upcomming onkogen fusion? https://www.sciencedirect.com/science/article/pii/S0893395222006093,moma,1/5
+NCOR1,7672,False,,2026-10-29,False,False,False,tumorsuppressor,Mis;F;N;O,moma: Overexpression of Ncor1 has been observed in gastric cancer (PMID: 26589942) and a NCOR1-MAP2K1 fusion has been reported in undifferentiated pleomorphic sarcoma (PMID: 31467233). Prækliniske forsøg med NCOR1-LYN,moma,1/5
+NCOR2,7673,False,,2026-03-05,False,False,False,tumorsuppressor,Mis;F;N;O,,moma,1/5
+NOTCH1,7881,False,,2026-03-05,True,True,True,onkogen eller tumorsuppressor,T;Mis;O;D;Fus;Ekspression,moma: SEC16A-NOTCH1 = onkogen i oncokb; ogsÃ¥ set fusioneret til PRKCA og ROS1. præklinisk forsøg til overekspression,moma,1/5
+NOTCH2,7882,False,,2026-03-05,True,True,True,onkogen eller tumorsuppressor,N;F;Mis;A;D,moma: Trunkering relevant. Ikke relevant som fusion. Set fusioneret til NRG1; som er på listen; samt et par andre; ukendte gener med ukendt funktion af fusionen. Rearrangement giver resistens.,moma,1/5
+NPM1,7910,False,,2026-03-05,True,True,True,onkogen eller tumorsuppressor,T;F;Mut;Ekspression;D,moma: NPM1 overexpression; deletion; fusions and frameshift insertions with oncogenic activity have been frequently identified in various hematologic malignancies (PMID: 16007073; 15659725; 8122112; 17488663; 26559910; 21258971; 18037965). deletions; and amplification; are critical drivers in hematological malignancies and solid tumors; acting as either a tumor suppressor or an oncogene depending on the context,moma,1/5
+NR4A3,7982,False,,2026-03-05,False,False,False,onkogen,T,moma: Mange partnere,moma,1/5
+NRG1,7997,False,,2026-03-05,True,False,False,onkogen,T,moma: velkendt,moma,1/5
+NTRK1,8031,False,,2026-03-05,True,False,False,onkogen,T;A;Fus;Mut,moma: velkendt. Præklinisk studie viser sensitivitet af NTRK1 amp til larotrektinib.,moma,1/5
+NTRK2,8032,False,,2026-03-05,True,False,False,onkogen,T;Mis;Fus,moma: velkendt,moma,1/5
+NTRK3,8033,False,,2026-03-05,True,False,False,onkogen,T;Fus;Mut,moma: velkendt,moma,1/5
+NUP98,8068,False,,2026-10-29,True,False,False,onkogen,T,,moma,1/5
+NUTM1,29919,False,,2026-03-05,False,False,False,ingen evidens,T,moma: kendt at fusionere i NUT midline carcinoma. Kendt at fusionere til BRD2/BRD4 (disse er partnere og NUTM1 er drivende),moma,1/5
+PAX3,8617,False,,2026-03-05,True,False,False,onkogen,T,moma: PAX3-FOXO1 diagnostisk i rhabdomyosarkom,moma,1/5
+PAX5,8619,False,,2026-03-05,True,True,False,onkogen eller tumorsuppressor,T;Mis;D;F;S;A,moma: Partner til JAK2; ETV6; ELN mfl. (Ukendte gener med ukendt funktion af fusionerne). PAX5 amplification typically results in the overexpression of the protein. Trial til del.,moma,1/5
+PAX7,8621,False,,2026-03-05,True,False,False,onkogen eller ukendt,T,moma: Prognostisk i rhabdomyosarkom,moma,1/5
+PAX8,8622,False,,2026-03-05,True,False,False,onkogen eller ukendt,T;Fus,moma: Diagnostisk i thyoridea PPARG-PAX8 - også fusioneret til GLIS3; GOF. Trial til fusion og PAX8 positive. It is frequently overexpressed in high-grade serous ovarian carcinoma,moma,1/5
+PDGFB,8800,False,,2026-03-05,False,False,False,onkogen,T,moma: set fusionere til col1a1. Col1a1 fjernes og PDGFB forbliver på listen. Behandlingsrelevant.,moma,1/5
+PDGFRA,8803,False,,2026-03-05,True,True,False,onkogen,Mis;O;T;A,moma: FIP1L1-PDGFRA onkogenisk. Mange partnere. Behandling i oncokb.,moma,1/5
+PDGFRB,8804,False,,2026-03-05,True,True,True,onkogen,T;A;Ekspression,moma: Mange partnere. Behandlingsrelevant; diagnostisk; prognostisk i hæm. sygdom.,moma,1/5
+PHF1,8919,False,,2026-03-05,False,False,False,ukendt,Fus,moma: PHF1 fusions are gene rearrangements that occur in certain tumors; most notably ossifying fibromyxoid tumors (OFMT); and are also found in some other cancers like endometrial stromal sarcoma. These fusions involve the PHF1 gene; which is involved in gene transcription regulation; and are linked to the development and progression of these tumors by altering gene expression and chromatin accessibility. Common fusion partners include EP400 and MEAF6. The EP400-PHF1 Fusion leads to truncation of the EP400 tumor suppressor gene and is considered likely oncogenic.,moma,1/5
+PLAG1,9045,False,,2026-03-05,False,False,True,onkogen,T;A;Ekspression,moma: Ikke kendt i OncoKb. PLAG1 rearrangements have been identified in pleomorphic adenoma (PMID: 30307055); lipoblastoma (PMID: 17332914; PMID: 31094927; PMID: 30857637); and uterine myxoid leiomyosarcoma (PMID: 30489320); and amplification of PLAG1 has been observed in lipoblastoma (PMID: 31614359). A 2025 study highlighted that increased PLAG1 expression is associated with poor prognosis across various cancer types.,moma,1/5
+PPARG,9236,False,,2026-03-05,False,False,False,onkogen eller tumorsuppressor,T,moma: Diagnostisk i thyoridea PPARG-PAX8 + fusionerer til CREB3L2,moma,1/5
+PRKACA,9380,False,,2026-03-05,False,False,False,onkogen,T;Mis;N;Fus,moma: set fusioneret til DNAJB1 og ATP1B1 i fibrolamellar hepatocellular carcinoma,moma,1/5
+PRKCA,9393,False,,2026-03-05,False,False,False,ukendt,Fus,moma: Ikke kendt i onkokb. En del fusioner i Mittleman; og få i jax. Ukendt funktion. PRKCA fusioner set i malign melanom; men også i naevi som er opstået i barndommen:https://www.sciencedirect.com/science/article/pii/S0893395223001916?via%3Dihub,moma,1/5
+PTEN,9588,False,,2026-03-05,True,False,False,tumorsuppressor,D;Mis;N;F;S,moma: Set i fusioner; men funktion ukendt. Umiddelbart ikke relevant som fusion,moma,1/5
+RAF1,9829,False,,2026-03-05,False,False,False,onkogen,T;A;Mut,moma: velkendt; både mut; fus og amp. In retrospective study of a Phase III trial; melanoma patients harboring RAF1 amplification treated with a combination of Paraplatin (carboplatin); Taxol (paclitaxel); and Nexavar (sorafenib) demonstrated a greater progression free survival when compared to Paraplatin (carboplatin) and Taxol (paclitaxel) without Nexavar (sorafenib) (PMID: 26307133). Beh. på ved på GM; NCT05786924,moma,1/5
+RARA,9864,False,,2026-03-05,True,True,False,onkogen eller ukendt,T,moma: PML-RARA behandlingsrelevant i APL. Trials går på fusioner. Prækliniske studier med RARA amplifikationer.,moma,1/5
+RASGRF1,9875,False,,2026-03-05,False,False,False,onkogen,Fus,moma: Protokol måske på vej (GM-Martin): https://doi.org/10.1038/s41698-025-01017-1,moma,1/5
+RASGRF2,9876,False,,2026-03-05,False,False,False,onkogen,Fus,moma: Protokol måske på vej (GM-Martin): https://doi.org/10.1038/s41698-025-01017-1,moma,1/5
+RELA,9955,False,,2026-03-05,False,False,False,onkogen eller ukendt,T,moma: ZFTA-RELA is the main driver of supratentorial ependymomas;,moma,1/5
+RET,9967,False,,2026-03-05,True,False,False,onkogen,T;Mis;N;F;A,moma: RET-inhibitorer; velkendt. NCT04116541 (amplifikation; mut.),moma,1/5
+ROS1,10261,False,,2026-03-05,True,False,False,onkogen,T;Fus;A;Mut,moma: ROS TKI'er; velkendt. NCT04116541 (amplifikation; mut.),moma,1/5
+RSPO2,28583,False,,2026-03-05,False,False,False,tumorsuppressor,T,moma: RSPO2 translocations have been identified in colorectal cancer and gastric cancers and predominantly result in the overexpression of RSPO2 and; subsequently; increased activation of Wnt pathway signaling activity (PMID: 35715628; 30250044; 22895193).,moma,1/5
+RSPO3,20866,False,,2026-03-05,False,False,False,onkogen,T,moma: Fusions of RSPO3 arise from chromosomal translocations that generally fuse the promoter region of a partner gene with exon 2 of RSPO3; retaining the entire coding region of RSPO3. RSPO3 fusions have been identified in colorectal cancer,moma,1/5
+SMARCA2,11098,False,,2026-03-05,True,False,True,tumorsuppressor,D;Ekspression,,moma,1/5
+SS18,11340,False,,2026-03-05,True,True,False,onkogen eller ukendt,T;Fus,moma: SS18-SSX2 fusion kendt i synovial sarkom og SS18-SSX1 er diagnostisk markør,moma,1/5
+SSX1,11335,False,,2026-03-05,True,True,False,onkogen eller ukendt,T;Fus,moma: flere partnere i databaser. Ex. SS18. SS18-SSX1 Fusion is an inclusion criterion in 4 clinical trials for synovial sarcoma; of which 3 are open and 1 is closed+ diagnostisk markør i synovialt sarkom,moma,1/5
+SSX2,11336,False,,2026-03-05,False,False,False,onkogen,T,moma: SS18-SSX2 fusion kendt i synovial sarkom,moma,1/5
+STAT6,11368,False,,2026-03-05,False,False,False,onkogen,T,moma: ses med forskellige partnere i oncokb og jax. Kan den bruges til noget?,moma,1/5
+TAF15,11547,False,,2026-03-05,True,False,False,onkogen,T,moma: Måske onkogen; men ukendt funktion.TAF15::NR4A3 kendt i condrosarkom og trial i Ewing sarkom.,moma,1/5
+TFE3,11752,False,,2026-03-05,False,False,False,onkogen,T,moma: Renal og sarkom; mange partnere. Men kan den bruges til noget?,moma,1/5
+TMPRSS2,11876,False,,2026-03-05,False,False,False,ukendt,T,moma: TMPRSS2-ERG i prostatacancer.,moma,1/5
+WWTR1,24042,True,moma: TEADES,2026-03-05,True,False,False,onkogen,T;Fus;CNA;Ekspression,moma: Hedder også TAZ; TAZ1. NCT05873686: (TAZ1 gene amplification); NCT06725758: (TAZ fusions),moma,1/5
+YAP1,16262,True,moma: TEADES,2026-03-05,True,False,False,onkogen,A;T;Fus;Ekspression,moma: NCT06725758 (fusion); Finland/TEADES og NCT05873686 (Amp),moma,1/5
+YWHAE,12851,False,,2026-03-05,False,False,False,tumorsuppressor,T,moma: Partner til ROS1; men også set sammen med NUTME2A+B+E i forskellige cancere,moma,1/5
