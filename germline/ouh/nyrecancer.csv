@@ -1,0 +1,10 @@
+hugo_name,hgnc_id,protocol,protocol_specification,date_added,notes,behandlings_relevans
+BAP1,950,false,,2026-10-28,,false
+FH,3700,false,,2026-10-28,,false
+FLCN,27310,false,,2026-10-28,,false
+MET,7029,false,,2026-10-28,,false
+PTEN,9588,false,,2026-10-28,,false
+SDHB,10681,false,,2026-10-28,,false
+SDHC,10682,false,,2026-10-28,,false
+SDHD,10683,false,,2026-10-28,,false
+VHL,12687,false,,2026-10-28,,false

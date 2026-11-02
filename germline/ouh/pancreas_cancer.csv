@@ -1,0 +1,12 @@
+hugo_name,hgnc_id,protocol,protocol_specification,date_added,notes,behandlings_relevans
+BRCA1,1100,false,,2026-10-28,,false
+BRCA2,1101,false,,2026-10-28,,false
+CDKN2A,1787,false,,2026-10-28,,false
+EPCAM,11529,false,,2026-10-28,,false
+MLH1,7127,false,,2026-10-28,,false
+MSH2,7325,false,,2026-10-28,,false
+MSH6,7329,false,,2026-10-28,,false
+PALB2,26144,false,,2026-10-28,,false
+PMS2,9122,false,,2026-10-28,,false
+PRSS1,9475,false,,2026-10-28,,false
+STK11,11389,false,,2026-10-28,,false
