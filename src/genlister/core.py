@@ -84,9 +84,12 @@ class FunktionAfGenetEnum(Enum):
 
     ONKOGEN = "onkogen"
     TUMORSUPPRESSOR = "tumorsuppressor"
+    TRANSKRIPTIONSFAKTOR = "transkriptionsfaktor"
     UKENDT = "ukendt"
-    ONKOGEN_ELLER_TS = "onkogen eller tumorsuppressor"
-    ONKOGEN_ELLER_UKENDT = "onkogen eller ukendt"
+    UKENDT_I_DATABASER = "ukendt i databaser"
+    UENIGHED_I_DATABASER = "uenighed i databaser"
+    FORMODET_ONKOGEN = "formodet onkogen"
+    FORMODET_TUMORSUPPRESSOR = "formodet tumorsuppressor"
     INGEN_EVIDENS = "ingen evidens"
 
 
@@ -248,15 +251,8 @@ class Fusion(CSVBase):
     behandlings_relevans: bool
     diagnostisk: bool
     prognostisk: bool
-    funktion_af_genet: FunktionAfGenetEnum | None = None
+    funktion_af_genet: list[FunktionAfGenetEnum] | None = None
     mekanisme: list[MekanismeEnum] | None = None
-
-    @field_validator("funktion_af_genet", mode="before")
-    @classmethod
-    def empty_string_is_none(cls, value: object) -> object:
-        if value == "":
-            return None
-        return value
 
 
 class FusionCombined(Fusion, CombinedCSV):
