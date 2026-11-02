@@ -1,0 +1,13 @@
+hugo_name,hgnc_id,protocol,protocol_specification,date_added,notes,behandlings_relevans
+ATM,795,false,,2026-10-28,,false
+BARD1,952,false,,2026-10-28,,false
+BRCA1,1100,false,,2026-10-28,,false
+BRCA2,1101,false,,2026-10-28,,false
+CDH1,1748,false,,2026-10-28,,false
+CHEK2,16627,false,,2026-10-28,,false
+PALB2,26144,false,,2026-10-28,,false
+PTEN,9588,false,,2026-10-28,,false
+RAD51C,9820,false,,2026-10-28,,false
+RAD51D,9823,false,,2026-10-28,,false
+STK11,11389,false,,2026-10-28,,false
+TP53,11998,false,,2026-10-28,,false
